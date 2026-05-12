@@ -3,207 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Donutsello – Χειροποίητα Ντόνατς | Ελευσίνα</title>
-<meta name="description" content="Τα πιο νόστιμα χειροποίητα ντόνατς στην Ελευσίνα. Φρέσκα κάθε μέρα, από 0.50€. Βαθμολογία 4.9★ στο Google.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Donutsello – Ελευσίνα 🍩</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Donut<span>sello</span></a>
+  <div class="nav-logo">Donut<span>sello</span></div>
   <ul class="nav-links">
     <li><a href="#menu">Μενού</a></li>
     <li><a href="#reviews">Κριτικές</a></li>
-    <li><a href="#info">Ώρες & Τοποθεσία</a></li>
-    <li><a href="tel:+302130438090" class="nav-cta">📞 21 3043 8090</a></li>
+    <li><a href="#info">Ώρες</a></li>
+    <li><a href="tel:+302130438090" class="nav-cta">📞 Καλέστε μας</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-bg-shape" aria-hidden="true"></div>
-  <div class="hero-bg-shape2" aria-hidden="true"></div>
+  <div class="hero-confetti" id="confetti"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-badge">🍩 Ελευσίνα, Αττική</div>
-      <h1 class="hero-title">Τα Καλύτερα<br><em>Χειροποίητα</em><br>Ντόνατς</h1>
-      <p class="hero-subtitle">Φρέσκα, αρτισάνικα ντόνατς που φτιάχνονται με μεράκι κάθε μέρα — γλυκά και αλμυρά από 0.50€. Ελάτε να μας βρείτε στην Ελευσίνα!</p>
+      <div class="hero-tag">🍩 Ελευσίνα, Αττική</div>
+      <h1 class="hero-title">Τα Καλύτερα<br><em>Ντόνατς</em><br>στην Πόλη!</h1>
+      <p class="hero-subtitle">Φρέσκα, χειροποίητα ντόνατς κάθε μέρα — γλυκά και αλμυρά από 0.50€. Έλα να μας δεις στην Ελευσίνα!</p>
       <div class="hero-actions">
-        <a href="#menu" class="btn-primary">Δείτε το Μενού</a>
-        <a href="#info" class="btn-secondary">📍 Βρείτε μας</a>
+        <a href="#menu" class="btn-primary">🍩 Δες το Μενού</a>
+        <a href="#info" class="btn-secondary">📍 Βρες μας</a>
       </div>
-      <div class="hero-trust">
-        <div class="hero-trust-stars">
-          <svg class="hero-trust-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="hero-trust-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="hero-trust-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="hero-trust-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="hero-trust-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="hero-rating">
+        <div class="stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <span class="hero-trust-text"><span>4.9★</span>&nbsp;·&nbsp;55 αξιολογήσεις Google</span>
+        <span class="rating-text"><strong>4.9★</strong> — 55 αξιολογήσεις Google</span>
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-visual-glow" aria-hidden="true"></div>
       <div class="donut-scene">
-        <!-- Main donut SVG -->
-        <svg class="donut-main" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="150" cy="155" r="108" fill="#F7D6E7"/>
-          <circle cx="150" cy="150" r="108" fill="#FF4FA3"/>
-          <circle cx="150" cy="150" r="108" fill="url(#dg1)"/>
-          <defs>
-            <radialGradient id="dg1" cx="35%" cy="30%" r="70%">
-              <stop offset="0%" stop-color="#FF6AB5"/>
-              <stop offset="100%" stop-color="#E8226A"/>
-            </radialGradient>
-          </defs>
-          <!-- Glaze highlight -->
-          <ellipse cx="118" cy="90" rx="44" ry="18" fill="white" opacity="0.18" transform="rotate(-20 118 90)"/>
-          <!-- Hole -->
-          <circle cx="150" cy="150" r="44" fill="white"/>
-          <!-- Sprinkles -->
-          <rect x="162" y="72" width="18" height="6" rx="3" fill="#FF4FA3" transform="rotate(-30 162 72)"/>
-          <rect x="116" y="64" width="16" height="5.5" rx="2.75" fill="#2255CC" transform="rotate(18 116 64)"/>
-          <rect x="200" y="104" width="15" height="5" rx="2.5" fill="#FF6AB5" transform="rotate(-52 200 104)"/>
-          <rect x="192" y="162" width="18" height="6" rx="3" fill="#1A7FE8" transform="rotate(14 192 162)"/>
-          <rect x="96" y="170" width="16" height="5" rx="2.5" fill="#FF4FA3" transform="rotate(-24 96 170)"/>
-          <rect x="112" y="120" width="14" height="5" rx="2.5" fill="#FF6AB5" transform="rotate(38 112 120)"/>
-          <rect x="158" y="218" width="15" height="5" rx="2.5" fill="#2255CC" transform="rotate(-12 158 218)"/>
-          <rect x="216" y="166" width="14" height="5" rx="2.5" fill="#1A7FE8" transform="rotate(33 216 166)"/>
-          <rect x="78" y="130" width="13" height="5" rx="2.5" fill="#FF4FA3" transform="rotate(-8 78 130)"/>
-          <rect x="174" y="86" width="12" height="4.5" rx="2.25" fill="#2255CC" transform="rotate(50 174 86)"/>
+        <svg class="donut-main" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="150" cy="278" rx="95" ry="14" fill="rgba(0,0,0,0.18)"/>
+          <circle cx="150" cy="148" r="105" fill="#0070E0"/>
+          <circle cx="150" cy="148" r="105" fill="#FF4FA3" opacity="0.95"/>
+          <path d="M190 50 Q220 68 215 98 Q208 78 198 72 Z" fill="#FF4FA3" opacity="0.9"/>
+          <path d="M122 44 Q100 58 106 90 Q113 68 128 62 Z" fill="#FF4FA3" opacity="0.9"/>
+          <path d="M234 118 Q254 142 244 168 Q237 146 232 138 Z" fill="#FF4FA3" opacity="0.9"/>
+          <ellipse cx="122" cy="88" rx="42" ry="18" fill="white" opacity="0.22" transform="rotate(-22 122 88)"/>
+          <circle cx="150" cy="148" r="43" fill="white"/>
+          <rect x="164" y="72" width="17" height="6" rx="3" fill="#FF4FA3" transform="rotate(-30 164 72)"/>
+          <rect x="118" y="62" width="15" height="5" rx="2.5" fill="#0050A0" transform="rotate(20 118 62)"/>
+          <rect x="198" y="102" width="14" height="5" rx="2.5" fill="#FF4FA3" transform="rotate(-50 198 102)"/>
+          <rect x="188" y="158" width="17" height="6" rx="3" fill="#0070E0" transform="rotate(15 188 158)"/>
+          <rect x="98" y="168" width="15" height="5" rx="2.5" fill="#FF4FA3" transform="rotate(-25 98 168)"/>
+          <rect x="114" y="118" width="13" height="5" rx="2.5" fill="#FF4FA3" transform="rotate(40 114 118)"/>
+          <rect x="156" y="214" width="14" height="5" rx="2.5" fill="#0070E0" transform="rotate(-10 156 214)"/>
+          <rect x="212" y="162" width="13" height="5" rx="2.5" fill="#0070E0" transform="rotate(35 212 162)"/>
         </svg>
-        <!-- Mini donuts -->
-        <svg class="mini-donut d1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="40" cy="40" r="33" fill="#2255CC"/>
-          <ellipse cx="26" cy="26" rx="10" ry="4.5" fill="white" opacity="0.22" transform="rotate(-18 26 26)"/>
+        <svg class="mini-donut d1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="40" r="32" fill="#FF4FA3"/>
+          <ellipse cx="26" cy="28" rx="10" ry="5" fill="white" opacity="0.25" transform="rotate(-20 26 28)"/>
           <circle cx="40" cy="40" r="13" fill="white"/>
-          <rect x="44" y="19" width="10" height="4" rx="2" fill="#FF4FA3" transform="rotate(-22 44 19)"/>
-          <rect x="22" y="36" width="9" height="3.5" rx="1.75" fill="#FF6AB5" transform="rotate(14 22 36)"/>
+          <rect x="43" y="20" width="10" height="4" rx="2" fill="#FF4FA3" transform="rotate(-20 43 20)"/>
+          <rect x="24" y="34" width="9" height="3.5" rx="1.75" fill="#0070E0" transform="rotate(15 24 34)"/>
         </svg>
-        <svg class="mini-donut d2" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="32.5" cy="32.5" r="28" fill="#FF4FA3"/>
-          <ellipse cx="22" cy="21" rx="9" ry="4" fill="white" opacity="0.2" transform="rotate(-16 22 21)"/>
+        <svg class="mini-donut d2" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32.5" cy="32.5" r="28" fill="#0070E0"/>
+          <ellipse cx="22" cy="22" rx="9" ry="4" fill="white" opacity="0.22" transform="rotate(-15 22 22)"/>
           <circle cx="32.5" cy="32.5" r="11" fill="white"/>
-          <rect x="37" y="14" width="9" height="3.5" rx="1.75" fill="#2255CC" transform="rotate(-26 37 14)"/>
-          <rect x="17" y="37" width="8" height="3" rx="1.5" fill="#FF6AB5" transform="rotate(18 17 37)"/>
+          <rect x="36" y="14" width="9" height="3.5" rx="1.75" fill="#FF4FA3" transform="rotate(-25 36 14)"/>
+          <rect x="18" y="36" width="8" height="3" rx="1.5" fill="#FF4FA3" transform="rotate(20 18 36)"/>
         </svg>
-        <svg class="mini-donut d3" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="27.5" cy="27.5" r="24" fill="#E8226A"/>
-          <ellipse cx="18" cy="18" rx="8" ry="3.5" fill="white" opacity="0.2" transform="rotate(-20 18 18)"/>
+        <svg class="mini-donut d3" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="27.5" cy="27.5" r="24" fill="#FF4FA3"/>
+          <ellipse cx="19" cy="19" rx="8" ry="3.5" fill="white" opacity="0.22" transform="rotate(-20 19 19)"/>
           <circle cx="27.5" cy="27.5" r="9.5" fill="white"/>
-          <rect x="30" y="11" width="8" height="3" rx="1.5" fill="#2255CC" transform="rotate(-32 30 11)"/>
+          <rect x="30" y="12" width="8" height="3" rx="1.5" fill="#0070E0" transform="rotate(-30 30 12)"/>
+          <rect x="15" y="32" width="7" height="3" rx="1.5" fill="#FF4FA3" transform="rotate(15 15 32)"/>
         </svg>
-        <div class="pill-badge b1">
-          <div class="pill-dot" style="background:#E8226A"></div>
-          Φρέσκά Καθημερινά
-        </div>
-        <div class="pill-badge b2">
-          <div class="pill-dot" style="background:#2255CC"></div>
-          Από 0.50€
-        </div>
+        <div class="badge-pill b1"><div class="badge-dot" style="background:#FF4FA3"></div>Φρέσκά Καθημερινά 🌿</div>
+        <div class="badge-pill b2"><div class="badge-dot" style="background:#0070E0"></div>Από 0.50€ 🎉</div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-<!-- MENU -->
 <section class="section menu-section" id="menu">
   <div class="section-inner">
     <div class="section-header">
-      <span class="eyebrow">Αγαπημένες Επιλογές</span>
+      <span class="section-eyebrow">🍩 Αγαπημένες Επιλογές</span>
       <h2 class="section-title">Το <em>Μενού</em> μας</h2>
-      <p class="section-sub">Κάθε ντόνατ φτιάχνεται φρέσκο, με επιλεγμένα υλικά και αγάπη — για κάθε γεύση και κάθε στιγμή.</p>
     </div>
     <div class="menu-grid">
 
-      <div class="menu-card reveal">
-        <div class="menu-card-imgwrap">
-          <img src="pictures/d1.png" alt="Nutella Γεμιστό ντόνατ" loading="lazy">
-        </div>
+      <div class="menu-card">
+        <img src="/pictures/d1.png" alt="donut1">
         <div class="menu-card-body">
-          <div class="menu-card-name">Nutella Γεμιστό</div>
+          <div class="menu-card-name">Nutella Γεμιστό 🍫</div>
           <div class="menu-card-desc">Αέρινο ντόνατ γεμιστό με κρεμώδη Nutella. Το απόλυτο guilty pleasure!</div>
-          <div class="menu-card-footer">
-            <span class="menu-price">από 0.80€</span>
-            <span class="menu-tag" style="background:#FDEDF4;color:#A8124D">Αγαπημένο</span>
-          </div>
+          <div class="menu-card-footer"><span class="menu-price">από 0.80€</span><span class="menu-tag" style="background:#FFE4F0;color:#CC006E">⭐ Αγαπημένο</span></div>
         </div>
       </div>
 
-      <div class="menu-card reveal reveal-delay-1">
-        <div class="menu-card-imgwrap">
-          <img src="pictures/d2.png" alt="Crème Bavaroise ντόνατ" loading="lazy">
-        </div>
+      <div class="menu-card">
+        <img src="/pictures/d2.png" alt="donut2">
         <div class="menu-card-body">
-          <div class="menu-card-name">Crème Bavaroise</div>
+          <div class="menu-card-name">Crème Bavaroise ✨</div>
           <div class="menu-card-desc">Βελούδινη κρέμα bavaroise με λευκό γκλέιζ. Κομψό και απίστευτα νόστιμο.</div>
-          <div class="menu-card-footer">
-            <span class="menu-price">από 0.90€</span>
-            <span class="menu-tag" style="background:#EEF3FD;color:#0A4FD4">Premium</span>
-          </div>
+          <div class="menu-card-footer"><span class="menu-price">από 0.90€</span><span class="menu-tag" style="background:#D6EEFF;color:#0050A0">💜 Premium</span></div>
         </div>
       </div>
 
-      <div class="menu-card reveal reveal-delay-2">
-        <div class="menu-card-imgwrap">
-          <img src="pictures/d3.png" alt="Φράουλα Κρέμα ντόνατ" loading="lazy">
-        </div>
+      <div class="menu-card">
+        <img src="/pictures/d3.png" alt="donut3">
         <div class="menu-card-body">
-          <div class="menu-card-name">Φράουλα Κρέμα</div>
-          <div class="menu-card-desc">Γεμιστό με κρέμα φράουλας, ροζ γκλέιζ και sprinkles. Χαρούμενο και φρουτένιο!</div>
-          <div class="menu-card-footer">
-            <span class="menu-price">από 0.80€</span>
-            <span class="menu-tag" style="background:#FDEDF4;color:#A8124D">Γλυκό</span>
-          </div>
+          <div class="menu-card-name">Φράουλα Κρέμα 🍓</div>
+          <div class="menu-card-desc">Γεμιστό με κρέμα φράουλας, ροζ γκλέιζ και sprinkles. Χαρούμενο!</div>
+          <div class="menu-card-footer"><span class="menu-price">από 0.80€</span><span class="menu-tag" style="background:#FFE4F0;color:#C2185B">🍓 Γλυκό</span></div>
         </div>
       </div>
 
-      <div class="menu-card reveal">
-        <div class="menu-card-imgwrap">
-          <img src="pictures/d4.png" alt="Μήλο και Κανέλα ντόνατ" loading="lazy">
-        </div>
+      <div class="menu-card">
+        <img src="/pictures/d4.png" alt="donut4">
         <div class="menu-card-body">
-          <div class="menu-card-name">Μήλο &amp; Κανέλα</div>
-          <div class="menu-card-desc">Αρωματικό ντόνατ με γέμιση μήλου και κανέλας. Σπιτική γεύση που ζεσταίνει!</div>
-          <div class="menu-card-footer">
-            <span class="menu-price">από 0.70€</span>
-            <span class="menu-tag" style="background:#FDF6E3;color:#8A6200">Σεζόν</span>
-          </div>
+          <div class="menu-card-name">Μήλο & Κανέλα 🍎</div>
+          <div class="menu-card-desc">Αρωματικό ντόνατ με γέμιση μήλου και κανέλας. Σπιτική γεύση!</div>
+          <div class="menu-card-footer"><span class="menu-price">από 0.70€</span><span class="menu-tag" style="background:#D6EEFF;color:#0050A0">🍂 Σεζόν</span></div>
         </div>
       </div>
 
-      <div class="menu-card reveal reveal-delay-1">
-        <div class="menu-card-imgwrap">
-          <img src="pictures/d5.png" alt="Double Σοκολάτα ντόνατ" loading="lazy">
-        </div>
+      <div class="menu-card">
+        <img src="/pictures/d5.png" alt="donut5">
         <div class="menu-card-body">
-          <div class="menu-card-name">Double Σοκολάτα</div>
+          <div class="menu-card-name">Double Σοκολάτα 🍫</div>
           <div class="menu-card-desc">Σοκολατένια ζύμη, κρέμα σοκολάτας και sprinkles. Για αληθινούς λάτρεις!</div>
-          <div class="menu-card-footer">
-            <span class="menu-price">από 0.90€</span>
-            <span class="menu-tag" style="background:#FDEDF4;color:#A8124D">Hot</span>
-          </div>
+          <div class="menu-card-footer"><span class="menu-price">από 0.90€</span><span class="menu-tag" style="background:#FFE4F0;color:#CC006E">🔥 Hot</span></div>
         </div>
       </div>
 
-      <div class="menu-card reveal reveal-delay-2">
-        <div class="menu-card-imgwrap">
-          <img src="pictures/d6.png" alt="Πλατό Πάρτι παραγγελία" loading="lazy">
-        </div>
+      <div class="menu-card">
+        <img src="/pictures/d6.png" alt="donut6">
         <div class="menu-card-body">
-          <div class="menu-card-name">Πλατό Πάρτι</div>
-          <div class="menu-card-desc">Μεγάλες ποσότητες για γενέθλια, εταιρικά events και κάθε εορτή. Επικοινωνήστε μαζί μας!</div>
-          <div class="menu-card-footer">
-            <span class="menu-price">Κατ' παραγγελία</span>
-            <span class="menu-tag" style="background:#EEF3FD;color:#0A4FD4">Ειδική</span>
-          </div>
+          <div class="menu-card-name">Πλατό Πάρτι 🎉</div>
+          <div class="menu-card-desc">Μεγάλες ποσότητες για γενέθλια, εταιρικά events και κάθε εορτή!</div>
+          <div class="menu-card-footer"><span class="menu-price">Κατ' παραγγελία</span><span class="menu-tag" style="background:#E0F7FA;color:#006064">🎂 Ειδική</span></div>
         </div>
       </div>
 
@@ -211,143 +155,89 @@
   </div>
 </section>
 
-<!-- WHY -->
 <section class="section why-section">
   <div class="section-inner">
     <div class="section-header">
-      <span class="eyebrow">Γιατί Donutsello</span>
-      <h2 class="section-title">Γεύση που <em>Αγαπάς</em></h2>
-      <p class="section-sub">Αυτό που μας κάνει ξεχωριστούς δεν είναι μόνο τα υλικά — είναι το μεράκι που βάζουμε σε κάθε ντόνατ.</p>
+      <span class="section-eyebrow">💙 Γιατί Donutsello;</span>
+      <h2 class="section-title">Γεύση που <em>Αγαπάς</em>!</h2>
     </div>
     <div class="why-grid">
-      <div class="why-card reveal">
-        <div class="why-icon-wrap" style="background:#FDEDF4">🤲</div>
-        <div class="why-card-title">100% Χειροποίητα</div>
-        <div class="why-card-desc">Κάθε ντόνατ φτιάχνεται με χέρι, με αγάπη και μεράκι — κάθε μέρα, χωρίς εξαιρέσεις.</div>
-      </div>
-      <div class="why-card reveal reveal-delay-1">
-        <div class="why-icon-wrap" style="background:#E8F5EE">🌿</div>
-        <div class="why-card-title">Φρέσκα Υλικά</div>
-        <div class="why-card-desc">Μόνο φρέσκα υλικά υψηλής ποιότητας. Φτιαγμένα την ίδια μέρα — πάντα φρέσκα.</div>
-      </div>
-      <div class="why-card reveal reveal-delay-2">
-        <div class="why-icon-wrap" style="background:#FDF6E3">💶</div>
-        <div class="why-card-title">Απίστευτη Τιμή</div>
-        <div class="why-card-desc">Γεμιστά ντόνατς από 0.50€. Τόση νοστιμιά χωρίς να σπάσεις την τσέπη!</div>
-      </div>
-      <div class="why-card reveal reveal-delay-3">
-        <div class="why-icon-wrap" style="background:#EEF3FD">💛</div>
-        <div class="why-card-title">Υπηρεσία με Ψυχή</div>
-        <div class="why-card-desc">Η κυρία που σε εξυπηρετεί είναι η καρδιά του καταστήματος — ζεστή και χαρούμενη!</div>
-      </div>
+      <div class="why-card"><span class="why-icon">🤲</span><div class="why-title">100% Χειροποίητα</div><div class="why-desc">Κάθε ντόνατ φτιάχνεται με χέρι, με αγάπη και μεράκι — κάθε μέρα!</div></div>
+      <div class="why-card"><span class="why-icon">🌿</span><div class="why-title">Φρέσκα Υλικά</div><div class="why-desc">Μόνο φρέσκα υλικά υψηλής ποιότητας. Φτιαγμένα την ίδια μέρα — πάντα.</div></div>
+      <div class="why-card"><span class="why-icon">💶</span><div class="why-title">Απίστευτη Τιμή</div><div class="why-desc">Γεμιστά ντόνατς από 0.50€. Τόση νοστιμιά χωρίς να σπάσεις την τσέπη!</div></div>
+      <div class="why-card"><span class="why-icon">💛</span><div class="why-title">Υπηρεσία με Ψυχή</div><div class="why-desc">Η κυρία που σε εξυπηρετεί είναι η καρδιά του καταστήματος — ζεστή, χαρούμενη!</div></div>
     </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
 <section class="section reviews-section" id="reviews">
   <div class="section-inner">
     <div class="section-header">
-      <span class="eyebrow">Τι Λένε οι Πελάτες</span>
+      <span class="section-eyebrow">⭐ Τι Λένε οι Πελάτες</span>
       <h2 class="section-title">Αληθινές <em>Κριτικές</em></h2>
-      <p class="section-sub">Δεν μας αρκεί να λέμε εμείς ότι είμαστε καλοί — οι πελάτες μας το λένε καλύτερα.</p>
     </div>
     <div class="reviews-grid">
-
-      <div class="review-card reveal">
-        <div class="review-quote" aria-hidden="true">"</div>
+      <div class="review-card">
         <div class="review-stars">
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="review-text">Τα πιο νόστιμα ντόνατς! Η κυρία που με εξυπηρέτησε ήταν πιο γλυκιά κι από τα προϊόντα της.</p>
-        <div class="review-author-row">
-          <div class="review-avatar">Α</div>
-          <div>
-            <div class="review-author-name">Αξιολόγηση Google</div>
-            <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
-          </div>
-        </div>
+        <p class="review-text">"Τα πιο νόστιμα ντόνατς! Η κυρία που με εξυπηρέτησε ήταν πιο γλυκιά κι από τα προϊόντα της."</p>
+        <div class="review-author">— Google Κριτική ⭐</div>
       </div>
-
-      <div class="review-card reveal reveal-delay-1">
-        <div class="review-quote" aria-hidden="true">"</div>
+      <div class="review-card">
         <div class="review-stars">
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="review-text">Πηγαίνω χρόνια τώρα, η ποιότητα είναι πάντα TOP, νόστιμα, φρέσκα και σε πολύ καλές τιμές!</p>
-        <div class="review-author-row">
-          <div class="review-avatar">Μ</div>
-          <div>
-            <div class="review-author-name">Αξιολόγηση Google</div>
-            <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
-          </div>
-        </div>
+        <p class="review-text">"Πηγαίνω χρόνια τώρα, η ποιότητα είναι πάντα TOP, νόστιμα, φρέσκα και σε πολύ καλές τιμές!"</p>
+        <div class="review-author">— Google Κριτική ⭐</div>
       </div>
-
-      <div class="review-card reveal reveal-delay-2">
-        <div class="review-quote" aria-hidden="true">"</div>
+      <div class="review-card">
         <div class="review-stars">
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg style="width:16px;height:16px;fill:#FF4FA3" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="review-text">Εδώ θα βρείτε ατελείωτη ποικιλία σε γλυκά και αλμυρά. Μια φορά να το δοκιμάσεις και κολλάς!</p>
-        <div class="review-author-row">
-          <div class="review-avatar">Ε</div>
-          <div>
-            <div class="review-author-name">Αξιολόγηση Google</div>
-            <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
-          </div>
-        </div>
+        <p class="review-text">"Εδώ θα βρείτε ατελείωτη ποικιλία σε γλυκά και αλμυρά. Μια φορά να το δοκιμάσεις και κολλάς!"</p>
+        <div class="review-author">— Google Κριτική ⭐</div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- INFO -->
 <section class="section info-section" id="info">
   <div class="section-inner">
     <div class="info-grid">
-      <div class="info-block reveal">
-        <h3>Βρείτε μας στην Ελευσίνα</h3>
-
-        <div class="info-item">
-          <div class="info-item-icon">📍</div>
+      <div class="info-block">
+        <h3>📍 Έλα να μας Βρεις!</h3>
+        <div class="info-row">
+          <div class="info-icon-wrap">📍</div>
           <div>
-            <div class="info-item-label">Διεύθυνση</div>
-            <div class="info-item-value">
-              Ελευθέριου Βενιζέλου 62<br>
-              Ελευσίνα 192 00, Αττική
-            </div>
+            <div class="info-row-label">Διεύθυνση</div>
+            <div class="info-row-value">Ελευθέριου Βενιζέλου 62<br>Ελευσίνα 192 00, Αττική</div>
           </div>
         </div>
-
-        <div class="info-item">
-          <div class="info-item-icon">📞</div>
+        <div class="info-row">
+          <div class="info-icon-wrap">📞</div>
           <div>
-            <div class="info-item-label">Τηλέφωνο</div>
-            <div class="info-item-value">
-              <a href="tel:+302130438090">21 3043 8090</a>
-            </div>
+            <div class="info-row-label">Τηλέφωνο</div>
+            <div class="info-row-value"><a href="tel:+302130438090" style="color:var(--blue);text-decoration:none;font-weight:700">21 3043 8090</a></div>
           </div>
         </div>
-
-        <div class="info-item">
-          <div class="info-item-icon">🕐</div>
+        <div class="info-row">
+          <div class="info-icon-wrap">🕐</div>
           <div>
-            <div class="info-item-label">Ώρες Λειτουργίας</div>
-            <div class="hours-table">
+            <div class="info-row-label">Ώρες Λειτουργίας</div>
+            <div class="hours-grid">
               <span class="hours-day">Δευτέρα</span><span class="hours-time">17:30 – 21:30</span>
               <span class="hours-day">Τρίτη</span><span class="hours-time">17:30 – 21:00</span>
               <span class="hours-day">Τετάρτη</span><span class="hours-time">17:30 – 21:30</span>
@@ -358,55 +248,96 @@
             </div>
           </div>
         </div>
-
-        <a href="https://maps.google.com/?q=Donutsello+Elefsina" target="_blank" rel="noopener" class="btn-outline">
-          🗺️ Άνοιξε στο Google Maps
-        </a>
+        <a href="https://maps.google.com/?q=Donutsello+Elefsina" target="_blank" class="btn-primary" style="margin-top:1.5rem;display:inline-flex">🗺️ Άνοιξε στο Google Maps</a>
       </div>
-
-      <div class="map-wrap reveal reveal-delay-1">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.9!2d23.5372691!3d38.0484537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1af97b8c111e9%3A0x5baedbedb350998!2sDonutsello%20%CE%95%CE%BB%CE%B5%CF%85%CF%83%CE%AF%CE%BD%CE%B1%CF%82!5e0!3m2!1sel!2sgr!4v1"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Χάρτης Donutsello Ελευσίνα">
-        </iframe>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.9!2d23.5372691!3d38.0484537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1af97b8c111e9%3A0x5baedbedb350998!2sDonutsello%20%CE%95%CE%BB%CE%B5%CF%85%CF%83%CE%AF%CE%BD%CE%B1%CF%82!5e0!3m2!1sel!2sgr!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Χάρτης Donutsello Ελευσίνα"></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Donut<span>sello</span></div>
-    <ul class="footer-links">
-      <li><a href="#menu">Μενού</a></li>
-      <li><a href="#reviews">Κριτικές</a></li>
-      <li><a href="#info">Ώρες &amp; Τοποθεσία</a></li>
-      <li><a href="tel:+302130438090">21 3043 8090</a></li>
-    </ul>
-    <div class="footer-right">Ελευσίνα, Αττική</div>
+  <div class="footer-logo">Donut<span>sello</span> 🍩</div>
+  <div class="footer-sub">Ελευσίνα, Αττική — Χειροποίητα Ντόνατς με Αγάπη κάθε μέρα!</div>
+  <div class="footer-links">
+    <a href="#menu">Μενού</a>
+    <a href="#reviews">Κριτικές</a>
+    <a href="#info">Βρες μας</a>
+    <a href="tel:+302130438090">📞 21 3043 8090</a>
   </div>
-  <div class="footer-divider">
-    <span class="footer-copy">© 2025 Donutsello Ελευσίνας. Με αγάπη από την Ελευσίνα.</span>
-    <span class="footer-copy">Χειροποίητα Ντόνατς με Μεράκι.</span>
-  </div>
+  <div class="footer-copy">© 2025 Donutsello Ελευσίνας. Με αγάπη από την Ελευσίνα 💙</div>
 </footer>
 
 <script>
+// Confetti dots
+(function(){
+  var container = document.getElementById('confetti');
+  var colors = ['#FF4FA3','#0070E0','#38ACFF','#FF85C2','#5BAEFF','#CC006E','#FFB3D6'];
+  var shapes = ['●','■','▲'];
+  for(var i=0;i<28;i++){
+    var el = document.createElement('span');
+    el.style.cssText = [
+      'position:absolute',
+      'font-size:'+(8+Math.random()*10)+'px',
+      'left:'+(Math.random()*100)+'%',
+      'top:0',
+      'color:'+colors[Math.floor(Math.random()*colors.length)],
+      'opacity:'+(0.4+Math.random()*0.5),
+      'animation:confettiFall '+(6+Math.random()*8)+'s '+(Math.random()*6)+'s linear infinite',
+      'user-select:none'
+    ].join(';');
+    el.textContent = shapes[Math.floor(Math.random()*shapes.length)];
+    container.appendChild(el);
+  }
+})();
+</script>
+
+<script>
+// ── SCROLL REVEAL ──
 (function() {
-  var els = document.querySelectorAll('.reveal');
-  function check() {
-    els.forEach(function(el) {
-      if (el.classList.contains('visible')) return;
-      var rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 60) {
-        el.classList.add('visible');
+  // Elements to animate and their entry styles
+  var targets = [
+    { sel: '.menu-card',   from: 'translateY(50px)', delay: true  },
+    { sel: '.why-card',    from: 'translateY(50px)', delay: true  },
+    { sel: '.review-card', from: 'translateY(50px)', delay: true  },
+    { sel: '.section-header', from: 'translateY(36px)', delay: false },
+    { sel: '.info-block',  from: 'translateX(-50px)', delay: false },
+    { sel: '.map-embed',   from: 'translateX(50px)',  delay: false },
+    { sel: '.hero-text',   from: 'translateY(40px)',  delay: false },
+    { sel: '.hero-visual', from: 'translateY(40px)',  delay: false },
+  ];
+
+  // Set initial hidden state
+  targets.forEach(function(t) {
+    document.querySelectorAll(t.sel).forEach(function(el, i) {
+      el.style.opacity = '0';
+      el.style.transform = t.from;
+      el.style.transition = 'opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1)';
+      if (t.delay) {
+        el.style.transitionDelay = (i % 3) * 0.1 + 's'; // stagger within row
       }
+      el.dataset.revealed = 'false';
+    });
+  });
+
+  function reveal() {
+    targets.forEach(function(t) {
+      document.querySelectorAll(t.sel).forEach(function(el) {
+        if (el.dataset.revealed === 'true') return;
+        var rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          el.style.opacity = '1';
+          el.style.transform = 'translate(0,0)';
+          el.dataset.revealed = 'true';
+        }
+      });
     });
   }
-  window.addEventListener('load', check);
-  window.addEventListener('scroll', check, { passive: true });
+
+  // Run on load (for elements already in view)
+  window.addEventListener('load', reveal);
+  window.addEventListener('scroll', reveal, { passive: true });
 })();
 </script>
 
