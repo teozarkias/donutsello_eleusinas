@@ -1,7 +1,7 @@
 /* ── HERO ── */
 .sv-hero {
   position: relative;
-  padding: 10rem 2.5rem 5rem;
+  padding: 11rem 2.5rem 6rem;
   text-align: center;
   background: var(--white);
   overflow: hidden;
@@ -123,7 +123,7 @@
   color: var(--accent);
   text-decoration: none;
   letter-spacing: 0.01em;
-  transition: gap 0.2s, opacity 0.2s;
+  transition: opacity 0.2s, letter-spacing 0.2s;
   opacity: 0.85;
 }
 .sv-card-cta:hover { opacity: 1; letter-spacing: 0.03em; }
@@ -170,16 +170,36 @@
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
-/* ── RESPONSIVE ── */
+/* ── TABLET ── */
 @media (max-width: 960px) {
   .sv-hero { padding: 9rem 1.8rem 4.5rem; }
   .sv-main { padding: 3rem 1.8rem 5rem; }
   .sv-grid { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+  .sv-card { padding: 1.8rem 1.6rem 1.6rem; }
+  .sv-cta { padding: 5rem 1.8rem; }
 }
 
+/* ── MOBILE ── */
 @media (max-width: 600px) {
-  .sv-hero { padding: 7.5rem 1.2rem 3.5rem; }
-  .sv-main { padding: 2.5rem 1.2rem 4rem; }
+  /* Hero */
+  .sv-hero { padding: 6rem 1.2rem 3rem; }
+  .sv-hero-title { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .sv-hero-sub { font-size: 0.9rem; }
+
+  /* Grid — single column so cards have breathing room */
+  .sv-main { padding: 2.5rem 1rem 3.5rem; }
   .sv-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .sv-cta { padding: 4rem 1.2rem; }
+
+  /* Cards */
+  .sv-card { padding: 1.6rem 1.4rem 1.5rem; border-radius: 16px; }
+  .sv-card-icon { font-size: 1.7rem; margin-bottom: 1rem; }
+  .sv-card-title { font-size: 1.05rem; }
+  .sv-card-desc { font-size: 0.82rem; margin-bottom: 1.2rem; }
+  .sv-card-num { top: 1.4rem; right: 1.4rem; }
+
+  /* CTA */
+  .sv-cta { padding: 3.5rem 1.2rem; }
+  .sv-cta-title { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  .sv-cta-sub { font-size: 0.85rem; }
+  .sv-cta-btn { display: block; text-align: center; padding: 1rem; font-size: 1rem; }
 }

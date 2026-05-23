@@ -23,6 +23,9 @@
     <li><a href="#info">Ώρες & Τοποθεσία</a></li>
     <li><a href="tel:+302130438090" class="nav-cta">21 3043 8090</a></li>
   </ul>
+  <button class="nav-hamburger" aria-label="Μενού" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -253,7 +256,7 @@
           <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
         </div>
-        <p class="review-text">Τα πιο νόστιμα ντόνατς! Η κυρία που με εξυπηρέτησε ήταν πιο γλυκιά κι από τα προϊόντα.</p>
+        <p class="review-text">Τα πιο νόστιμα ντόνατς! Η κυρία που με εξυπηρέτησε ήταν πιο γλυκιά κι από τα προϊόντα της.</p>
         <div class="review-author-row">
           <div class="review-avatar">Α</div>
           <div>
@@ -400,5 +403,22 @@
 })();
 </script>
 
+<script>
+  const hamburger = document.querySelector('.nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  // Close on link click
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
 </body>
 </html>
