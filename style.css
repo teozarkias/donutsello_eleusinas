@@ -45,7 +45,7 @@ nav{
   border-bottom:1px solid rgba(0,0,0,0.07);
 }
 .nav-logo{
-  font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;
+  font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;
   color:var(--ink);letter-spacing:-0.03em;text-decoration:none;
 }
 .nav-logo span{color:var(--pink)}
@@ -65,6 +65,7 @@ nav{
   box-shadow:0 2px 8px rgba(232,38,110,0.3)!important;
 }
 .nav-cta:hover{background:var(--pink-dark)!important;transform:translateY(-1px)!important}
+.nav-active{color:var(--pink)!important;font-weight:600!important}
 
 /* ── HERO ── */
 .hero{
