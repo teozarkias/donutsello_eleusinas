@@ -47,7 +47,7 @@
     <article class="sv-card reveal" style="--accent:#E8266E; --accent-light:#FDEDF4;">
       <div class="sv-card-icon">🎂</div>
       <div class="sv-card-num">01</div>
-      <h2 class="sv-card-title">Γενέθλια & Πάρτι</h2>
+      <h2 class="sv-card-title">Γενέθλια - Πάρτι</h2>
       <p class="sv-card-desc">Κάντε τα γενέθλια αξέχαστα με ένα custom donut tower ή κουτί-έκπληξη. Προσωποποιημένες επιλογές για κάθε ηλικία.</p>
       <a href="tel:+302130438090" class="sv-card-cta">Μάθετε περισσότερα →</a>
     </article>
@@ -65,7 +65,7 @@
     <article class="sv-card reveal" style="--accent:#C8960C; --accent-light:#FDF6E3;">
       <div class="sv-card-icon">💍</div>
       <div class="sv-card-num">03</div>
-      <h2 class="sv-card-title">Γάμοι & Αρραβώνες</h2>
+      <h2 class="sv-card-title">Γάμοι - Αρραβώνες</h2>
       <p class="sv-card-desc">Η γλυκιά πινελιά που λείπει από την ημέρα σας. Custom γεύσεις, χρώματα και διακόσμηση που ταιριάζουν στο θέμα σας.</p>
       <a href="tel:+302130438090" class="sv-card-cta">Μάθετε περισσότερα →</a>
     </article>
@@ -158,6 +158,54 @@
       hamburger.setAttribute('aria-expanded', false);
     });
   });
+</script>
+
+<!-- CONTACT MODAL -->
+<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-label="Επικοινωνία">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Κλείσιμο">✕</button>
+    <p class="modal-eyebrow">Επικοινωνία</p>
+    <h2 class="modal-title">Καλέστε μας!</h2>
+    <div class="modal-number">
+      <span class="modal-number-text">21 3043 8090</span>
+      <button class="modal-copy-btn" id="modalCopyBtn">Αντιγραφή</button>
+    </div>
+    <p class="modal-hours">
+      <strong>Δευτ – Παρ:</strong> 07:30 – 21:00<br>
+      <strong>Σάββατο:</strong> 08:00 – 21:00<br>
+      <strong>Κυριακή:</strong> 08:00 – 20:00
+    </p>
+  </div>
+</div>
+<script>
+  (function() {
+    const isMobile = () => ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+    const overlay = document.getElementById('contactModal');
+    const closeBtn = document.getElementById('modalClose');
+    const copyBtn = document.getElementById('modalCopyBtn');
+
+    function openModal() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeModal() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+
+    // Intercept ALL tel: links except the modal dial button
+    document.querySelectorAll('a[href="tel:+302130438090"]:not(.modal-dial-btn)').forEach(el => {
+      el.addEventListener('click', function(e) {
+        if (!isMobile()) { e.preventDefault(); openModal(); }
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText('21 3043 8090').then(() => {
+        copyBtn.textContent = 'Αντιγράφηκε ✓';
+        copyBtn.classList.add('copied');
+        setTimeout(() => { copyBtn.textContent = 'Αντιγραφή'; copyBtn.classList.remove('copied'); }, 2000);
+      });
+    });
+  })();
 </script>
 </body>
 </html>
