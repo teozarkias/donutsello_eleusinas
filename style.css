@@ -71,17 +71,19 @@ nav{
 .hero{
   min-height:100vh;display:flex;align-items:center;
   padding:6rem 2.5rem 5rem;position:relative;overflow:hidden;
-  background:var(--white);
+  background:url('pictures/donutsello_outside_look.jpg') center center / cover no-repeat;
+}
+/* Light white wash so content stays readable */
+.hero::before{
+  content:'';position:absolute;inset:0;z-index:0;
 }
 .hero-bg-shape{
   position:absolute;right:-120px;top:-80px;width:700px;height:700px;
-  background:radial-gradient(ellipse at center,#FDE9F3 0%,transparent 70%);
-  pointer-events:none;z-index:0;
+  pointer-events:none;z-index:1;
 }
 .hero-bg-shape2{
   position:absolute;left:-60px;bottom:-80px;width:500px;height:500px;
-  background:radial-gradient(ellipse at center,#EEF3FD 0%,transparent 70%);
-  pointer-events:none;z-index:0;
+  pointer-events:none;z-index:1;
 }
 .hero-inner{
   max-width:1160px;width:100%;margin:0 auto;
@@ -91,16 +93,18 @@ nav{
 .hero-badge{
   display:inline-flex;align-items:center;gap:0.5rem;
   font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--pink);background:var(--pink-light);
+  color:var(--pink);background:rgba(255,255,255,0.88);
   padding:0.4rem 1rem;border-radius:100px;margin-bottom:1.6rem;
   border:1px solid rgba(232,38,110,0.18);
+  backdrop-filter:blur(8px);
 }
 .hero-title{
-  font-size:3.8rem;font-weight:900;color:var(--ink);
+  font-size:3.8rem;font-weight:700;color:var(--white);
   margin-bottom:1.2rem;line-height:1.08;
+  text-shadow:0 2px 12px rgba(0,0,0,0.55),0 1px 3px rgba(0,0,0,0.4);
 }
-.hero-title em{color:var(--pink);font-style:italic}
-.hero-subtitle{font-size:1rem;line-height:1.75;color:var(--ink-3);margin-bottom:2.2rem;max-width:420px}
+.hero-title em{color: #15b9ff;font-style:italic;text-shadow:0 2px 12px rgba(0,0,0,0.4)}
+.hero-subtitle{font-size:1rem;line-height:1.75;color:var(--white);margin-bottom:2.2rem;max-width:420px;text-shadow:0 1px 6px rgba(0,0,0,0.5)}
 .hero-actions{display:flex;gap:0.9rem;align-items:center;flex-wrap:wrap;margin-bottom:2rem}
 .btn-primary{
   background:var(--pink);color:var(--white);
@@ -113,23 +117,15 @@ nav{
 }
 .btn-primary:hover{background:var(--pink-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,38,110,0.35)}
 .btn-secondary{
-  color:var(--ink-2);font-size:0.9rem;font-weight:600;
+  color:var(--ink);font-size:0.9rem;font-weight:600;
   text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;
   padding:0.85rem 1.5rem;border-radius:100px;
-  border:1.5px solid var(--surface-3);
+  border:1.5px solid rgba(255,255,255,0.6);
   transition:all var(--transition);
-  background:var(--white);
+  background:rgba(255,255,255,0.88);
+  backdrop-filter:blur(8px);
 }
-.btn-secondary:hover{border-color:var(--ink-3);background:var(--surface-2)}
-.hero-trust{
-  display:inline-flex;align-items:center;gap:0.75rem;
-  background:var(--surface);border:1px solid var(--surface-3);
-  padding:0.6rem 1.1rem;border-radius:100px;
-}
-.hero-trust-stars{display:flex;gap:2px}
-.hero-trust-star{width:13px;height:13px;fill:var(--gold)}
-.hero-trust-text{font-size:0.78rem;font-weight:600;color:var(--ink-2)}
-.hero-trust-text span{color:var(--gold)}
+.btn-secondary:hover{border-color:var(--ink-3);background:var(--white)}
 
 /* ── VISUAL SCENE ── */
 .hero-visual{display:flex;align-items:center;justify-content:center;position:relative}
@@ -154,7 +150,6 @@ nav{
 @keyframes floatMini1{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(-8deg)}}
 @keyframes floatMini2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(6deg)}}
 @keyframes floatMini3{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(-5deg)}}
-
 .pill-badge{
   position:absolute;
   background:var(--white);border-radius:100px;
@@ -311,7 +306,7 @@ nav{
 
 /* ── FOOTER ── */
 footer{
-  background:var(--ink);color:rgba(255,255,255,0.55);
+  background:#89CFF0;color:rgba(0,0,0,0.55);
   padding:3.5rem 2.5rem;
 }
 .footer-inner{
@@ -321,7 +316,7 @@ footer{
 }
 .footer-logo{
   font-family:'Playfair Display',serif;font-size:1.5rem;
-  font-weight:900;color:var(--white);letter-spacing:-0.02em;
+  font-weight:900;color:var(--ink);letter-spacing:-0.02em;
 }
 .footer-logo span{color:var(--pink)}
 .footer-links{
@@ -329,18 +324,18 @@ footer{
   list-style:none;flex-wrap:wrap;
 }
 .footer-links a{
-  font-size:0.8rem;color:rgba(255,255,255,0.4);
+  font-size:0.8rem;color:rgba(0,0,0,0.5);
   text-decoration:none;transition:color var(--transition);font-weight:500;
 }
-.footer-links a:hover{color:var(--white)}
-.footer-right{text-align:right;font-size:0.75rem;color:rgba(255,255,255,0.3)}
+.footer-links a:hover{color:var(--ink)}
+.footer-right{text-align:right;font-size:0.75rem;color:rgba(0,0,0,0.35)}
 .footer-divider{
   max-width:1160px;margin:0 auto;
-  border-top:1px solid rgba(255,255,255,0.07);
+  border-top:1px solid rgba(0,0,0,0.1);
   padding-top:1.5rem;margin-top:2.5rem;
   display:flex;align-items:center;justify-content:space-between;
 }
-.footer-copy{font-size:0.72rem;color:rgba(255,255,255,0.25)}
+.footer-copy{font-size:0.72rem;color:rgba(0,0,0,0.3)}
 
 /* ── SCROLL REVEAL ── */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.6s cubic-bezier(0.22,1,0.36,1),transform 0.6s cubic-bezier(0.22,1,0.36,1)}
@@ -427,7 +422,9 @@ footer{
   .hero-visual{order:-1}
   .hero-subtitle{margin-left:auto;margin-right:auto}
   .hero-actions{justify-content:center}
-  .hero-trust{margin:0 auto}
+  .donut-scene{width:320px;height:320px}
+  .donut-main{width:210px;height:210px}
+  .mini-donut.d1{width:64px;height:64px}.mini-donut.d2{width:52px;height:52px}.mini-donut.d3{width:44px;height:44px}
   .donut-scene{width:320px;height:320px}
   .donut-main{width:210px;height:210px}
   .mini-donut.d1{width:64px;height:64px}.mini-donut.d2{width:52px;height:52px}.mini-donut.d3{width:44px;height:44px}
@@ -449,6 +446,15 @@ footer{
   .nav-links{display:none}
   .nav-hamburger{display:flex}
   .hero{padding:5rem 1.2rem 3rem;min-height:auto}
+  .hero-badge{font-size:0.65rem}
+  .hero-title{font-size:2.4rem}
+  .hero-subtitle{font-size:0.93rem}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .btn-primary,.btn-secondary{justify-content:center}
+  .donut-scene{width:260px;height:260px}
+  .donut-main{width:180px;height:180px}
+  .mini-donut.d1{width:52px;height:52px;right:20px}.mini-donut.d2{width:42px;height:42px;left:8px}.mini-donut.d3{width:36px;height:36px}
+  .pill-badge{font-size:0.65rem;padding:0.35rem 0.7rem}
   .hero-badge{font-size:0.65rem}
   .hero-title{font-size:2.4rem}
   .hero-subtitle{font-size:0.93rem}
