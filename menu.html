@@ -1,402 +1,1005 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Μενού – Donutsello | Ελευσίνα</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="menu.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Μενού – Donutsello | Ελευσίνα</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo"
+        >Donutsello<span> Eleusinas</span></a
+      >
+      <ul class="nav-links">
+        <li><a href="index.html">Αρχική</a></li>
+        <li><a href="menu.html" class="nav-active">Μενού</a></li>
+        <li><a href="services.html">Υπηρεσίες</a></li>
+        <li><a href="index.html#reviews">Κριτικές</a></li>
+        <li><a href="index.html#info">Ώρες & Τοποθεσία</a></li>
+        <li><a href="tel:+302130438090" class="nav-cta">21 3043 8090</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Μενού" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-<nav>
-  <a href="index.html" class="nav-logo">Donutsello<span> Eleusinas</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html">Αρχική</a></li>
-    <li><a href="menu.html" class="nav-active">Μενού</a></li>
-    <li><a href="services.html">Υπηρεσίες</a></li>
-    <li><a href="index.html#reviews">Κριτικές</a></li>
-    <li><a href="index.html#info">Ώρες & Τοποθεσία</a></li>
-    <li><a href="tel:+302130438090" class="nav-cta">21 3043 8090</a></li>
-  </ul>
-  <button class="nav-hamburger" aria-label="Μενού" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+    <header class="m-hero">
+      <p class="m-hero-eyebrow">Μενού</p>
+      <h1 class="m-hero-title">Κάθε μέρα <em>φρέσκα</em>.</h1>
+      <p class="m-hero-sub">
+        Χειροποίητα donuts, λουκουμάδες, εκλέρ και αλμυρά σνακ στην Ελευσίνα.
+      </p>
+    </header>
 
-<header class="m-hero">
-  <p class="m-hero-eyebrow">Μενού</p>
-  <h1 class="m-hero-title">Κάθε μέρα <em>φρέσκα</em>.</h1>
-  <p class="m-hero-sub">Χειροποίητα donuts, λουκουμάδες, εκλέρ και αλμυρά σνακ στην Ελευσίνα.</p>
-</header>
+    <nav class="m-tabs" aria-label="Κατηγορίες">
+      <a href="#mpoukies" class="m-tab m-tab--active">Κεράσματα</a>
+      <a href="#stronggyla" class="m-tab">Ατομικά</a>
+      <a href="#loukoumades" class="m-tab">Λουκουμάδες</a>
+      <a href="#ekler" class="m-tab">Εκλέρ</a>
+      <a href="#almyra1" class="m-tab">Αλμυρά Ατομικά</a>
+      <a href="#almyra2" class="m-tab">Αλμυρά Κιλού</a>
+      <a href="#special" class="m-tab">Special</a>
+      <a href="#thematika" class="m-tab">Θεματικά</a>
+    </nav>
 
-<nav class="m-tabs" aria-label="Κατηγορίες">
-  <a href="#mpoukies" class="m-tab m-tab--active">Κεράσματα</a>
-  <a href="#stronggyla" class="m-tab">Ατομικά</a>
-  <a href="#loukoumades" class="m-tab">Λουκουμάδες</a>
-  <a href="#ekler" class="m-tab">Εκλέρ</a>
-  <a href="#almyra1" class="m-tab">Αλμυρά Ατομικά</a>
-  <a href="#almyra2" class="m-tab">Αλμυρά Κιλού</a>
-  <a href="#special" class="m-tab">Special</a>
-</nav>
+    <main class="m-main">
+      <!-- ΚΕΡΑΣΜΑΤΑ -->
+      <section class="m-section" id="mpoukies">
+        <h2 class="m-section-title"><span>01</span> Κεράσματα</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1002-ΜΠΟΥΚΙΑ ΣΟΚ-ΣΟΚ.png"
+                alt="Μπουκιά Σοκολάτα-Σοκολάτα"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Σοκολάτα – Σοκολάτα</h3>
+              <p>Γέμιση & γλάσο σοκολάτας</p>
+            </div>
+          </article>
 
-<main class="m-main">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1003-ΜΠΟΥΚΙΑ ΚΡΕΜΑ-ΛΕΥΚΗ.png"
+                alt="Μπουκιά Κρέμα-Λευκή"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Κρέμα – Λευκή</h3>
+              <p>Κρέμα με λευκό γλάσο</p>
+            </div>
+          </article>
 
-  <!-- ΚΕΡΑΣΜΑΤΑ -->
-  <section class="m-section" id="mpoukies">
-    <h2 class="m-section-title"><span>01</span> Κεράσματα</h2>
-    <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1004-ΜΠΟΥΚΙΑ ΚΡΕΜΑ-ΑΧΝΗ.png"
+                alt="Μπουκιά Κρέμα-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Κρέμα – Άχνη</h3>
+              <p>Κρέμα με άχνη ζάχαρη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1002-ΜΠΟΥΚΙΑ ΣΟΚ-ΣΟΚ.png" alt="Μπουκιά Σοκολάτα-Σοκολάτα" loading="lazy"></div>
-        <div class="m-card-body"><h3>Σοκολάτα – Σοκολάτα</h3><p>Γέμιση & γλάσο σοκολάτας.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1006-ΜΠΟΥΚΙΑ ΣΟΚΟΛ-ΑΧΝΗ.png"
+                alt="Μπουκιά Σοκολάτα-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Σοκολάτα – Άχνη</h3>
+              <p>Σοκολάτα με άχνη ζάχαρη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1003-ΜΠΟΥΚΙΑ ΚΡΕΜΑ-ΛΕΥΚΗ.png" alt="Μπουκιά Κρέμα-Λευκή" loading="lazy"></div>
-        <div class="m-card-body"><h3>Κρέμα – Λευκή</h3><p>Κρέμα με λευκό γλάσο.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1007-ΜΠΟΥΚΙΑ ΥΓΕΙΑΣ.png"
+                alt="Μπουκιά Υγείας"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Υγείας</h3>
+              <p>Χωρίς γλάσο, ελαφριά επιλογή</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1004-ΜΠΟΥΚΙΑ ΚΡΕΜΑ-ΑΧΝΗ.png" alt="Μπουκιά Κρέμα-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Κρέμα – Άχνη</h3><p>Κρέμα με άχνη ζάχαρη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1009-ΜΠΟΥΚΙΑ ΒΑΤΟΜΟΥΡΟ-ΑΧΝΗ.png"
+                alt="Μπουκιά Βατόμουρο-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Βατόμουρο – Άχνη</h3>
+              <p>Γέμιση βατόμουρο, άχνη ζάχαρη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1006-ΜΠΟΥΚΙΑ ΣΟΚΟΛ-ΑΧΝΗ.png" alt="Μπουκιά Σοκολάτα-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Σοκολάτα – Άχνη</h3><p>Σοκολάτα με άχνη ζάχαρη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1012-ΜΠΟΥΚΙΑ ΛΕΜΟΝΙ-ΑΧΝΗ.png"
+                alt="Μπουκιά Λεμόνι-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Λεμόνι – Άχνη</h3>
+              <p>Γέμιση λεμόνι, άχνη ζάχαρη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1007-ΜΠΟΥΚΙΑ ΥΓΕΙΑΣ.png" alt="Μπουκιά Υγείας" loading="lazy"></div>
-        <div class="m-card-body"><h3>Υγείας</h3><p>Χωρίς γλάσο, ελαφριά επιλογή.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1017-ΜΠΟΥΚΙΑ ΜΠΙΣΚΟΤΟ.png"
+                alt="Μπουκιά Μπισκότο"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Μπισκότο</h3>
+              <p>Κρέμα μπισκότου</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1009-ΜΠΟΥΚΙΑ ΒΑΤΟΜΟΥΡΟ-ΑΧΝΗ.png" alt="Μπουκιά Βατόμουρο-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Βατόμουρο – Άχνη</h3><p>Γέμιση βατόμουρο, άχνη ζάχαρη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1019-ΜΠΟΥΚΙΑ ΣΟΚΟΛ-ΦΡΑΟΥΛΑ.png"
+                alt="Μπουκιά Σοκολάτα-Φράουλα"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Σοκολάτα – Φράουλα</h3>
+              <p>Γέμιση σοκολάτα, γλάσο φράουλα</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1012-ΜΠΟΥΚΙΑ ΛΕΜΟΝΙ-ΑΧΝΗ.png" alt="Μπουκιά Λεμόνι-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Λεμόνι – Άχνη</h3><p>Γέμιση λεμόνι, άχνη ζάχαρη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1022-ΜΠΟΥΚΙΑ ΜΠΟΥΕΝΟ.png"
+                alt="Μπουκιά Μπουένο"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Μπουένο</h3>
+              <p>Γέμιση τύπου Kinder Bueno</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1017-ΜΠΟΥΚΙΑ ΜΠΙΣΚΟΤΟ.png" alt="Μπουκιά Μπισκότο" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μπισκότο</h3><p>Κρέμα μπισκότου.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/7.0201-ΜΠΟΥΚΙΑ ΜΙΝΙ ΣΟΚΟΛ-ΑΧΝΗ.png"
+                alt="Μπουκιά Mini Σοκολάτα-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Mini Σοκολάτα – Άχνη</h3>
+              <p>Μίνι μέγεθος</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1019-ΜΠΟΥΚΙΑ ΣΟΚΟΛ-ΦΡΑΟΥΛΑ.png" alt="Μπουκιά Σοκολάτα-Φράουλα" loading="lazy"></div>
-        <div class="m-card-body"><h3>Σοκολάτα – Φράουλα</h3><p>Γέμιση σοκολάτα, γλάσο φράουλα.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/7.0202-ΜΠΟΥΚΙΑ ΜΙΝΙ ΚΡΕΜΑ-ΑΧΝΗ.png"
+                alt="Μπουκιά Mini Κρέμα-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Mini Κρέμα – Άχνη</h3>
+              <p>Μίνι μέγεθος</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1022-ΜΠΟΥΚΙΑ ΜΠΟΥΕΝΟ.png" alt="Μπουκιά Μπουένο" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μπουένο</h3><p>Γέμιση τύπου Kinder Bueno.</p></div>
-      </article>
+      <!-- ΑΤΟΜΙΚΑ -->
+      <section class="m-section" id="stronggyla">
+        <h2 class="m-section-title"><span>02</span> Ατομικά</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0308-ΣΤΡΟΓΓ ΒΑΤΟΜΟΥΡΟ-ΑΧΝΗ.png"
+                alt="Στρογγυλό Βατόμουρο-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Βατόμουρο – Άχνη</h3>
+              <p>Γλάσο βατόμουρο, άχνη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/7.0201-ΜΠΟΥΚΙΑ ΜΙΝΙ ΣΟΚΟΛ-ΑΧΝΗ.png" alt="Μπουκιά Mini Σοκολάτα-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Mini Σοκολάτα – Άχνη</h3><p>Μίνι μέγεθος.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0309-ΣΤΡΟΓΓ ΛΕΜΟΝΙ-ΑΧΝΗ.png"
+                alt="Στρογγυλό Λεμόνι-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Λεμόνι – Άχνη</h3>
+              <p>Γλάσο λεμόνι, άχνη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/7.0202-ΜΠΟΥΚΙΑ ΜΙΝΙ ΚΡΕΜΑ-ΑΧΝΗ.png" alt="Μπουκιά Mini Κρέμα-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Mini Κρέμα – Άχνη</h3><p>Μίνι μέγεθος.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0601-ΣΤΡΟΓΓ ΜΠΙΣΚΟΤΟ.png"
+                alt="Στρογγυλό Μπισκότο"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Μπισκότο Oreo</h3>
+              <p>Γλάσο κρέμας μπισκότου</p>
+            </div>
+          </article>
 
-    </div>
-  </section>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0602-ΣΤΡΟΓΓ ΣΟΚΟΛ-ΦΡΑΟΥΛΑ.png"
+                alt="Στρογγυλό Σοκολάτα-Φράουλα"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Σοκολάτα – Φράουλα</h3>
+              <p>Γλάσο σοκ. & φράουλα</p>
+            </div>
+          </article>
 
-  <!-- ΑΤΟΜΙΚΑ -->
-  <section class="m-section" id="stronggyla">
-    <h2 class="m-section-title"><span>02</span> Ατομικά</h2>
-    <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0604-ΣΤΡΟΓΓ ΣΟΚΟΛ-ΣΟΚΟΛ.png"
+                alt="Στρογγυλό Σοκολάτα-Σοκολάτα"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Σοκολάτα – Σοκολάτα</h3>
+              <p>Διπλή σοκολάτα</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0308-ΣΤΡΟΓΓ ΒΑΤΟΜΟΥΡΟ-ΑΧΝΗ.png" alt="Στρογγυλό Βατόμουρο-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Βατόμουρο – Άχνη</h3><p>Γλάσο βατόμουρο, άχνη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0605-ΣΤΡΟΓΓ ΚΡΕΜΑ-ΛΕΥΚΗ.png"
+                alt="Στρογγυλό Κρέμα-Λευκή"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Κρέμα – Λευκή</h3>
+              <p>Λευκό γλάσο κρέμας</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0309-ΣΤΡΟΓΓ ΛΕΜΟΝΙ-ΑΧΝΗ.png" alt="Στρογγυλό Λεμόνι-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Λεμόνι – Άχνη</h3><p>Γλάσο λεμόνι, άχνη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0606-ΣΤΡΟΓΓ ΣΟΚΟΛ-ΑΧΝΗ.png"
+                alt="Στρογγυλό Σοκολάτα-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Σοκολάτα – Άχνη</h3>
+              <p>Γλάσο σοκολάτα, άχνη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0601-ΣΤΡΟΓΓ ΜΠΙΣΚΟΤΟ.png" alt="Στρογγυλό Μπισκότο" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μπισκότο Oreo</h3><p>Γλάσο κρέμας μπισκότου.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0609-ΣΤΡΟΓΓ ΜΠΟΥΕΝΟ.png"
+                alt="Στρογγυλό Μπουένο"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Μπουένο</h3>
+              <p>Γλάσο τύπου Kinder Bueno</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0602-ΣΤΡΟΓΓ ΣΟΚΟΛ-ΦΡΑΟΥΛΑ.png" alt="Στρογγυλό Σοκολάτα-Φράουλα" loading="lazy"></div>
-        <div class="m-card-body"><h3>Σοκολάτα – Φράουλα</h3><p>Γλάσο σοκ. & φράουλα.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0615-ΣΤΡΟΓΓ ΜΠΙΣΚΟΤΟ ΛΕΥΚΟ.png"
+                alt="Στρογγυλό Μπισκότο Λευκό"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Μπισκότο Πτι-μπερ</h3>
+              <p>Λευκό γλάσο μπισκότου</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0604-ΣΤΡΟΓΓ ΣΟΚΟΛ-ΣΟΚΟΛ.png" alt="Στρογγυλό Σοκολάτα-Σοκολάτα" loading="lazy"></div>
-        <div class="m-card-body"><h3>Σοκολάτα – Σοκολάτα</h3><p>Διπλή σοκολάτα.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/3.0402-ΚΑΝΕΛΑ.png"
+                alt="Μπουκιά Mini Κρέμα-Άχνη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Κανέλα</h3>
+              <p>Γλυκό ντόνατ κανέλας</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0605-ΣΤΡΟΓΓ ΚΡΕΜΑ-ΛΕΥΚΗ.png" alt="Στρογγυλό Κρέμα-Λευκή" loading="lazy"></div>
-        <div class="m-card-body"><h3>Κρέμα – Λευκή</h3><p>Λευκό γλάσο κρέμας.</p></div>
-      </article>
+      <!-- ΛΟΥΚΟΥΜΑΔΕΣ -->
+      <section class="m-section" id="loukoumades">
+        <h2 class="m-section-title"><span>03</span> Λουκουμάδες</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/3.0403 ΛΟΥΚΟΥΜΑΣ.png"
+                alt="Λουκουμάς"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Λουκουμάς</h3>
+              <p>Κλασικός τηγανητός λουκουμάς</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0606-ΣΤΡΟΓΓ ΣΟΚΟΛ-ΑΧΝΗ.png" alt="Στρογγυλό Σοκολάτα-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Σοκολάτα – Άχνη</h3><p>Γλάσο σοκολάτα, άχνη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1500-ΛΟΥΚ ΜΙΝΙ ΖΑΧΑΡΗΣ.png"
+                alt="Λουκ. Mini Ζάχαρης"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Mini Ζάχαρης</h3>
+              <p>Με κρυσταλλική ζάχαρη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0609-ΣΤΡΟΓΓ ΜΠΟΥΕΝΟ.png" alt="Στρογγυλό Μπουένο" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μπουένο</h3><p>Γλάσο τύπου Kinder Bueno.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1503-ΛΟΥΚ ΜΙΝΙ ΛΕΥΚΗ ΧΡ.ΤΡ..png"
+                alt="Λουκ. Mini Λευκή Χοκολάτα Τριμμένη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Mini Λευκή Σοκολάτα</h3>
+              <p>Λευκή χοκολάτα τριμμένη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0615-ΣΤΡΟΓΓ ΜΠΙΣΚΟΤΟ ΛΕΥΚΟ.png" alt="Στρογγυλό Μπισκότο Λευκό" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μπισκότο Πτι-μπερ</h3><p>Λευκό γλάσο μπισκότου.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1505-ΛΟΥΚ ΜΙΝΙ ΣΟΚ-ΦΡΑ ΧΡ.ΤΡ..png"
+                alt="Λουκ. Mini Σοκ-Φράουλα"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Mini Σοκ. – Φράουλα</h3>
+              <p>Σοκολάτα & φράουλα τριμμένη</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/3.0402-ΚΑΝΕΛΑ.png" alt="Μπουκιά Mini Κρέμα-Άχνη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Κανέλα</h3><p>Γλυκό ντόνατ κανέλας.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1506-ΛΟΥΚ ΜΙΝΙ ΣΟΚΟΛ ΧΡ.ΤΡ..png"
+                alt="Λουκ. Mini Σοκολάτα Τριμμένη"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Mini Σοκολάτα</h3>
+              <p>Σοκολάτα χρ. τριμμένη</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    </div>
-  </section>
+      <!-- ΕΚΛΕΡ -->
+      <section class="m-section" id="ekler">
+        <h2 class="m-section-title"><span>04</span> Εκλέρ</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0501-ΕΚΛΕΡ ΥΓΕΙΑΣ.png"
+                alt="Εκλέρ Υγείας"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Εκλέρ Υγείας</h3>
+              <p>Χωρίς γλάσο, ελαφριά επιλογή</p>
+            </div>
+          </article>
 
-  <!-- ΛΟΥΚΟΥΜΑΔΕΣ -->
-  <section class="m-section" id="loukoumades">
-    <h2 class="m-section-title"><span>03</span> Λουκουμάδες</h2>
-    <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/2.0503-ΕΚΛΕΡ ΣΟΚΟΛ-ΣΟΚΟΛ.png"
+                alt="Εκλέρ Σοκολάτα-Σοκολάτα"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Εκλέρ Σοκολάτα</h3>
+              <p>Γέμιση & γλάσο σοκολάτας</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/3.0403 ΛΟΥΚΟΥΜΑΣ.png" alt="Λουκουμάς" loading="lazy"></div>
-        <div class="m-card-body"><h3>Λουκουμάς</h3><p>Κλασικός τηγανητός λουκουμάς.</p></div>
-      </article>
+      <!-- ΑΛΜΥΡΑ Ατομικά-->
+      <section class="m-section" id="almyra1">
+        <h2 class="m-section-title"><span>05</span> Αλμυρά Ατομικά</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img src="pictures/3.0702-ΤΟΣΤ.png" alt="Τοστ" loading="lazy" />
+            </div>
+            <div class="m-card-body">
+              <h3>Τοστ</h3>
+              <p>Κλασικό τοστ</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1500-ΛΟΥΚ ΜΙΝΙ ΖΑΧΑΡΗΣ.png" alt="Λουκ. Mini Ζάχαρης" loading="lazy"></div>
-        <div class="m-card-body"><h3>Mini Ζάχαρης</h3><p>Με κρυσταλλική ζάχαρη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1201-ΜΠΟΥΚΙΑ ΖΑΜΠΟΝ-ΤΥΡΙ.png"
+                alt="Μπουκιά Ζαμπόν-Τυρί"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Ζαμπόν – Τυρί (Μπουκιά)</h3>
+              <p>Αλμυρή γέμιση ζαμπόν & τυρί</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1503-ΛΟΥΚ ΜΙΝΙ ΛΕΥΚΗ ΧΡ.ΤΡ..png" alt="Λουκ. Mini Λευκή Χοκολάτα Τριμμένη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Mini Λευκή Σοκολάτα</h3><p>Λευκή χοκολάτα τριμμένη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/3.0703-ΠΙΡΟΣΚΙ.png"
+                alt="Πιροσκί"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Πιροσκί</h3>
+              <p>Αλμυρό γεμιστό σνακ</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1505-ΛΟΥΚ ΜΙΝΙ ΣΟΚ-ΦΡΑ ΧΡ.ΤΡ..png" alt="Λουκ. Mini Σοκ-Φράουλα" loading="lazy"></div>
-        <div class="m-card-body"><h3>Mini Σοκ. – Φράουλα</h3><p>Σοκολάτα & φράουλα τριμμένη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img src="pictures/burger.png" alt="burger" loading="lazy" />
+            </div>
+            <div class="m-card-body">
+              <h3>Πιροσκί Μπέργκερ</h3>
+              <p>Πιροσκί με μπέργκερ και φέτα</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1506-ΛΟΥΚ ΜΙΝΙ ΣΟΚΟΛ ΧΡ.ΤΡ..png" alt="Λουκ. Mini Σοκολάτα Τριμμένη" loading="lazy"></div>
-        <div class="m-card-body"><h3>Mini Σοκολάτα</h3><p>Σοκολάτα χρ. τριμμένη.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/cheeseburger.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Πιροσκί φέτα</h3>
+              <p>Πιροσκί με φέτα</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    </div>
-  </section>
+      <!-- ΑΛΜΥΡΑ Κιλού -->
+      <section class="m-section" id="almyra2">
+        <h2 class="m-section-title"><span>06</span> Αλμυρά Κιλού</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/1.1200-ΜΠΟΥΚΙΑ ΠΙΡΟΣΚΑΚΙ.png"
+                alt="Πιροσκάκι"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Πιροσκάκι</h3>
+              <p>Αλμυρή γεμιστή μπουκιά</p>
+            </div>
+          </article>
 
-  <!-- ΕΚΛΕΡ -->
-  <section class="m-section" id="ekler">
-    <h2 class="m-section-title"><span>04</span> Εκλέρ</h2>
-    <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/3.0700-ΖΑΜΠΟΝ-ΤΥΡΙ.png"
+                alt="Ζαμπόν-Τυρί"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Ζαμπόν – Τυρί</h3>
+              <p>Κλασικό αλμυρό σνακ</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0501-ΕΚΛΕΡ ΥΓΕΙΑΣ.png" alt="Εκλέρ Υγείας" loading="lazy"></div>
-        <div class="m-card-body"><h3>Εκλέρ Υγείας</h3><p>Χωρίς γλάσο, ελαφριά επιλογή.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img src="pictures/burger.png" alt="burger" loading="lazy" />
+            </div>
+            <div class="m-card-body">
+              <h3>Μίνι Πιροσκί Μπέργκερ</h3>
+              <p>Μίνι πιροσκί με μπέργκερ και φέτα</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/2.0503-ΕΚΛΕΡ ΣΟΚΟΛ-ΣΟΚΟΛ.png" alt="Εκλέρ Σοκολάτα-Σοκολάτα" loading="lazy"></div>
-        <div class="m-card-body"><h3>Εκλέρ Σοκολάτα</h3><p>Γέμιση & γλάσο σοκολάτας.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/cheeseburger.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Μίνι Πιροσκί φέτα</h3>
+              <p>Μίνι πιροσκί με φέτα</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    </div>
-  </section>
+      <!-- SPECIAL -->
+      <section class="m-section" id="special">
+        <h2 class="m-section-title"><span>07</span>Special</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut1.png"
+                alt="Πιροσκάκι"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Choco Roll</h3>
+              <p>
+                Roll με επικάλυψη σοκολάτας γάλακτος και τριμμένο μαύρο μπισκότο
+              </p>
+            </div>
+          </article>
 
-  <!-- ΑΛΜΥΡΑ Ατομικά-->
-  <section class="m-section" id="almyra1">
-    <h2 class="m-section-title"><span>05</span> Αλμυρά Ατομικά</h2>
-    <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut2.png"
+                alt="Ζαμπόν-Τυρί"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Cinnamon Roll</h3>
+              <p>
+                Roll κανέλας με επικάλυψη λευκής σοκολάτας και τριμμένο μπισκότο
+                speculoos
+              </p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/3.0702-ΤΟΣΤ.png" alt="Τοστ" loading="lazy"></div>
-        <div class="m-card-body"><h3>Τοστ</h3><p>Κλασικό τοστ.</p></div>
-      </article>
-      
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1201-ΜΠΟΥΚΙΑ ΖΑΜΠΟΝ-ΤΥΡΙ.png" alt="Μπουκιά Ζαμπόν-Τυρί" loading="lazy"></div>
-        <div class="m-card-body"><h3>Ζαμπόν – Τυρί (Μπουκιά)</h3><p>Αλμυρή γέμιση ζαμπόν & τυρί.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut3.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Pistacchio Roll</h3>
+              <p>Roll κανέλας με επικάλυψη pistacchio και τριμμένο φυστίκι</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/3.0703-ΠΙΡΟΣΚΙ.png" alt="Πιροσκί" loading="lazy"></div>
-        <div class="m-card-body"><h3>Πιροσκί</h3><p>Αλμυρό γεμιστό σνακ.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut4.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Special Μπισκότο</h3>
+              <p>
+                Γέμιση λευκής σοκολάτας με κομμάτια μπισκότου και λευκό γλάσο
+              </p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/burger.png" alt="burger" loading="lazy"></div>
-        <div class="m-card-body"><h3>Πιροσκί Μπέργκερ</h3><p>Πιροσκί με μπέργκερ και φέτα</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut5.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Special Φράουλα Σαμπάνια</h3>
+              <p>Γέμιση κρέμα Σαμπάνιας με επικάλυψη γλάσο φράουλα</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/cheeseburger.png" alt="burger" loading="lazy"></div>
-        <div class="m-card-body"><h3>Πιροσκί φέτα</h3><p>Πιροσκί με φέτα</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut6.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Special Φραουλίνο</h3>
+              <p>
+                Γέμιση σοκολάτα υγείας με κομμάτια φράουλας και επικάλυψη λευκής
+                σοκολάτας
+              </p>
+            </div>
+          </article>
 
-    </div>
-  </section>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/special_donut7.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Special Μαυροκέρασο</h3>
+              <p>​Γέμιση κρέμα Βαυαρίας με μαυροκέρασο</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <!-- ΑΛΜΥΡΑ Κιλού -->
-  <section class="m-section" id="almyra2">
-    <h2 class="m-section-title"><span>06</span> Αλμυρά Κιλού</h2>
-    <div class="m-grid">
+      <!-- ΘΕΜΑΤΙΚΑ -->
+      <section class="m-section" id="thematika">
+        <h2 class="m-section-title"><span>08</span>Θεματικά</h2>
+        <div class="m-grid">
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut1.png"
+                alt="Πιροσκάκι"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Halloween κολοκύθα</h3>
+              <p>Επικάλυψη σοκολάτας με γέμιση βατόμουρο</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/1.1200-ΜΠΟΥΚΙΑ ΠΙΡΟΣΚΑΚΙ.png" alt="Πιροσκάκι" loading="lazy"></div>
-        <div class="m-card-body"><h3>Πιροσκάκι</h3><p>Αλμυρή γεμιστή μπουκιά.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut2.png"
+                alt="Ζαμπόν-Τυρί"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Halloween νυχτερίδα</h3>
+              <p>Επικάλυψη σοκολάτας με γέμιση πραλίνα σοκολάτας</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/3.0700-ΖΑΜΠΟΝ-ΤΥΡΙ.png" alt="Ζαμπόν-Τυρί" loading="lazy"></div>
-        <div class="m-card-body"><h3>Ζαμπόν – Τυρί</h3><p>Κλασικό αλμυρό σνακ.</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut3.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Halloween ιστός αράχνης</h3>
+              <p>Επικάλυψη σοκολάτας πορτοκάλι με γέμιση πραλίνα σοκολάτας</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/burger.png" alt="burger" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μίνι Πιροσκί Μπέργκερ</h3><p>Μίνι πιροσκί με μπέργκερ και φέτα</p></div>
-      </article>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut7.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Merry Christmas</h3>
+              <p>Επικάλυψη σοκολάτας με γέμιση πραλίνα λευκής σοκολάτας</p>
+            </div>
+          </article>
 
-      <article class="m-card reveal">
-        <div class="m-card-img"><img src="pictures/cheeseburger.png" alt="burger" loading="lazy"></div>
-        <div class="m-card-body"><h3>Μίνι Πιροσκί φέτα</h3><p>Μίνι πιροσκί με φέτα</p></div>
-      </article>
-    </div>
-  </section>
-</main>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut5.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Valentines Hearts White</h3>
+              <p>Επικάλυψη σοκολάτας με γέμιση πραλίνα φράουλα</p>
+            </div>
+          </article>
 
-<section class="m-cta">
-  <p class="m-cta-eyebrow">Παραγγελία</p>
-  <h2 class="m-cta-title">Καλέστε μας τώρα</h2>
-  <a href="tel:+302130438090" class="m-cta-btn">21 3043 8090</a>
-</section>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut6.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Valentines Hearts Pink</h3>
+              <p>Επικάλυψη σοκολάτας με γέμιση πραλίνα</p>
+            </div>
+          </article>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Donut<span>sello</span></div>
-    <ul class="footer-links">
-      <li><a href="index.html">Αρχική</a></li>
-      <li><a href="menu.html">Μενού</a></li>
-      <li><a href="services.html">Υπηρεσίες</a></li>
-      <li><a href="index.html#reviews">Κριτικές</a></li>
-      <li><a href="index.html#info">Ώρες & Τοποθεσία</a></li>
-    </ul>
-    <div class="footer-right">Ελευσίνα, Αττική</div>
-  </div>
-  <div class="footer-divider">
-    <span class="footer-copy">© 2025 Donutsello.</span>
-  </div>
-</footer>
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut4.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Valentines Love</h3>
+              <p>Επικάλυψη σοκολάτας με γέμιση πραλίνα</p>
+            </div>
+          </article>
 
-<script>
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const idx = Array.from(e.target.parentElement.children).indexOf(e.target);
-        e.target.style.transitionDelay = (idx * 60) + 'ms';
-        e.target.classList.add('visible');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+          <article class="m-card reveal">
+            <div class="m-card-img">
+              <img
+                src="pictures/thematiko_donut8.png"
+                alt="burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="m-card-body">
+              <h3>Χριστουγεννιάτικο δέντρο</h3>
+              <p>Eπικάλυψη σοκολάτας με γέμιση φυστίκι και πραλίνα σοκολάτας</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
-  const sections = document.querySelectorAll('.m-section');
-  const tabs = document.querySelectorAll('.m-tab');
-  const scrollIO = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        tabs.forEach(t => t.classList.remove('m-tab--active'));
-        const active = document.querySelector('.m-tab[href="#' + e.target.id + '"]');
-        if (active) active.classList.add('m-tab--active');
-      }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px' });
-  sections.forEach(s => scrollIO.observe(s));
-</script>
+    <section class="m-cta">
+      <p class="m-cta-eyebrow">Παραγγελία</p>
+      <h2 class="m-cta-title">Καλέστε μας τώρα</h2>
+      <a href="tel:+302130438090" class="m-cta-btn">21 3043 8090</a>
+    </section>
 
-<script>
-  const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', false);
-    });
-  });
-</script>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">Donut<span>sello</span></div>
+        <ul class="footer-links">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="menu.html">Μενού</a></li>
+          <li><a href="services.html">Υπηρεσίες</a></li>
+          <li><a href="index.html#reviews">Κριτικές</a></li>
+          <li><a href="index.html#info">Ώρες & Τοποθεσία</a></li>
+          <li>
+            <a href="https://www.instagram.com/donutsello_eleusinas/"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100004138966222"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+        <div class="footer-right">Ελευσίνα, Αττική</div>
+      </div>
+      <div class="footer-divider">
+        <span class="footer-copy">© 2025 Donutsello.</span>
+      </div>
+    </footer>
 
+    <script>
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const idx = Array.from(e.target.parentElement.children).indexOf(
+                e.target,
+              );
+              e.target.style.transitionDelay = idx * 60 + "ms";
+              e.target.classList.add("visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
-<!-- CONTACT MODAL -->
-<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-label="Επικοινωνία">
-  <div class="modal">
-    <button class="modal-close" id="modalClose" aria-label="Κλείσιμο">✕</button>
-    <p class="modal-eyebrow">Επικοινωνία</p>
-    <h2 class="modal-title">Καλέστε μας!</h2>
-    <div class="modal-number">
-      <span class="modal-number-text">21 3043 8090</span>
-      <button class="modal-copy-btn" id="modalCopyBtn">Αντιγραφή</button>
-    </div>
-    <p class="modal-hours">
-      <strong>Δευτ – Παρ:</strong> 07:30 – 21:00<br>
-      <strong>Σάββατο:</strong> 08:00 – 21:00<br>
-      <strong>Κυριακή:</strong> 08:00 – 20:00
-    </p>
-  </div>
-</div>
-<script>
-  (function() {
-    const isMobile = () => ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
-    const overlay = document.getElementById('contactModal');
-    const closeBtn = document.getElementById('modalClose');
-    const copyBtn = document.getElementById('modalCopyBtn');
+      const sections = document.querySelectorAll(".m-section");
+      const tabs = document.querySelectorAll(".m-tab");
+      const scrollIO = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              tabs.forEach((t) => t.classList.remove("m-tab--active"));
+              const active = document.querySelector(
+                '.m-tab[href="#' + e.target.id + '"]',
+              );
+              if (active) active.classList.add("m-tab--active");
+            }
+          });
+        },
+        { rootMargin: "-40% 0px -55% 0px" },
+      );
+      sections.forEach((s) => scrollIO.observe(s));
+    </script>
 
-    function openModal() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closeModal() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
-
-    // Intercept ALL tel: links except the modal dial button
-    document.querySelectorAll('a[href="tel:+302130438090"]:not(.modal-dial-btn)').forEach(el => {
-      el.addEventListener('click', function(e) {
-        if (!isMobile()) { e.preventDefault(); openModal(); }
+    <script>
+      const hamburger = document.querySelector(".nav-hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      hamburger.addEventListener("click", () => {
+        const open = navLinks.classList.toggle("open");
+        hamburger.classList.toggle("open", open);
+        hamburger.setAttribute("aria-expanded", open);
       });
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText('21 3043 8090').then(() => {
-        copyBtn.textContent = 'Αντιγράφηκε ✓';
-        copyBtn.classList.add('copied');
-        setTimeout(() => { copyBtn.textContent = 'Αντιγραφή'; copyBtn.classList.remove('copied'); }, 2000);
+      navLinks.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          hamburger.classList.remove("open");
+          hamburger.setAttribute("aria-expanded", false);
+        });
       });
-    });
-  })();
-</script>
-</body>
+    </script>
+
+    <!-- CONTACT MODAL -->
+    <div
+      class="modal-overlay"
+      id="contactModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Επικοινωνία"
+    >
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Κλείσιμο">
+          ✕
+        </button>
+        <p class="modal-eyebrow">Επικοινωνία</p>
+        <h2 class="modal-title">Καλέστε μας!</h2>
+        <div class="modal-number">
+          <span class="modal-number-text">21 3043 8090</span>
+          <button class="modal-copy-btn" id="modalCopyBtn">Αντιγραφή</button>
+        </div>
+        <p class="modal-hours">
+          <strong>Δευτ – Παρ:</strong> 07:30 – 21:00<br />
+          <strong>Σάββατο:</strong> 08:00 – 21:00<br />
+          <strong>Κυριακή:</strong> 08:00 – 20:00
+        </p>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const isMobile = () =>
+          "ontouchstart" in window || navigator.maxTouchPoints > 0;
+        const overlay = document.getElementById("contactModal");
+        const closeBtn = document.getElementById("modalClose");
+        const copyBtn = document.getElementById("modalCopyBtn");
+
+        function openModal() {
+          overlay.classList.add("open");
+          document.body.style.overflow = "hidden";
+        }
+        function closeModal() {
+          overlay.classList.remove("open");
+          document.body.style.overflow = "";
+        }
+
+        // Intercept ALL tel: links except the modal dial button
+        document
+          .querySelectorAll('a[href="tel:+302130438090"]:not(.modal-dial-btn)')
+          .forEach((el) => {
+            el.addEventListener("click", function (e) {
+              if (!isMobile()) {
+                e.preventDefault();
+                openModal();
+              }
+            });
+          });
+
+        closeBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeModal();
+        });
+
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard.writeText("21 3043 8090").then(() => {
+            copyBtn.textContent = "Αντιγράφηκε ✓";
+            copyBtn.classList.add("copied");
+            setTimeout(() => {
+              copyBtn.textContent = "Αντιγραφή";
+              copyBtn.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
