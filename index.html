@@ -1,318 +1,458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Donutsello – Χειροποίητα Ντόνατς | Ελευσίνα</title>
-<meta name="description" content="Τα πιο νόστιμα χειροποίητα ντόνατς στην Ελευσίνα. Φρέσκα κάθε μέρα, από 0.50€. Βαθμολογία 4.9★ στο Google.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Donutsello – Χειροποίητα Ντόνατς | Ελευσίνα</title>
+    <meta
+      name="description"
+      content="Τα πιο νόστιμα χειροποίητα ντόνατς στην Ελευσίνα. Φρέσκα κάθε μέρα, από 0.50€. Βαθμολογία 4.9★ στο Google."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="index.html" class="nav-logo"
+        >Donutsello<span> Eleusinas</span></a
+      >
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-active">Αρχική</a></li>
+        <li><a href="menu.html">Μενού</a></li>
+        <li><a href="services.html">Υπηρεσίες</a></li>
+        <li><a href="#reviews">Κριτικές</a></li>
+        <li><a href="#info">Ώρες & Τοποθεσία</a></li>
+        <li><a href="tel:+302130438090" class="nav-cta">21 3043 8090</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Μενού" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-<!-- NAV -->
-<nav>
-  <a href="index.html" class="nav-logo">Donutsello<span> Eleusinas</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="nav-active">Αρχική</a></li>
-    <li><a href="menu.html">Μενού</a></li>
-    <li><a href="services.html">Υπηρεσίες</a></li>
-    <li><a href="#reviews">Κριτικές</a></li>
-    <li><a href="#info">Ώρες & Τοποθεσία</a></li>
-    <li><a href="tel:+302130438090" class="nav-cta">21 3043 8090</a></li>
-  </ul>
-  <button class="nav-hamburger" aria-label="Μενού" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg-shape" aria-hidden="true"></div>
-  <div class="hero-bg-shape2" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-badge">🍩 Ελευσίνα, Αττική</div>
-      <p class="hero-subtitle"><b>DONUTSELLO</b> σημαίνει ντόνατς ημέρας, ποικιλία γεύσεων. Ελάτε να μας βρείτε στην Ελευσίνα, γιατί προτεραιότητα μας είστε εσείς!</p>
-      <div class="hero-actions">
-        <a href="menu.html" class="btn-primary">Δείτε το Μενού</a>
-        <a href="#info" class="btn-secondary">📍 Βρείτε μας</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="section why-section">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="eyebrow">Γιατί Donutsello</span>
-      <h2 class="section-title">Γεύση που <em>Αγαπάς</em></h2>
-      <p class="section-sub">Αυτό που μας κάνει ξεχωριστούς δεν είναι μόνο τα υλικά — είναι το μεράκι που βάζουμε σε κάθε ντόνατ.</p>
-    </div>
-    <div class="why-grid">
-      <!--
-      <div class="why-card reveal">
-        <div class="why-icon-wrap" style="background:#FDEDF4">🤲</div>
-        <div class="why-card-title">100% Χειροποίητα</div>
-        <div class="why-card-desc">Κάθε ντόνατ φτιάχνεται με χέρι, με αγάπη και μεράκι — κάθε μέρα, χωρίς εξαιρέσεις.</div>
-      </div>
-      -->
-      <div class="why-card reveal reveal-delay-1">
-        <div class="why-icon-wrap" style="background:#E8F5EE">🌿</div>
-        <div class="why-card-title">Φρέσκα Υλικά</div>
-        <div class="why-card-desc">Μόνο φρέσκα υλικά υψηλής ποιότητας. Φτιαγμένα την ίδια μέρα — πάντα φρέσκα.</div>
-      </div>
-      <div class="why-card reveal reveal-delay-2">
-        <div class="why-icon-wrap" style="background:#FDF6E3">💶</div>
-        <div class="why-card-title">Απίστευτη Τιμή</div>
-        <div class="why-card-desc">Γεμιστά ντόνατς. Τόση νοστιμιά χωρίς να σπάσεις την τσέπη!</div>
-      </div>
-      <div class="why-card reveal reveal-delay-3">
-        <div class="why-icon-wrap" style="background:#EEF3FD">💛</div>
-        <div class="why-card-title">Υπηρεσία με Ψυχή</div>
-        <div class="why-card-desc">Η κυρία που σε εξυπηρετεί είναι η καρδιά του καταστήματος — ζεστή και χαρούμενη!</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="section reviews-section" id="reviews">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="eyebrow">Τι Λένε οι Πελάτες</span>
-      <h2 class="section-title">Αληθινές <em>Κριτικές</em></h2>
-      <p class="section-sub">Δεν μας αρκεί να λέμε εμείς ότι είμαστε καλοί — οι πελάτες μας το λένε καλύτερα.</p>
-    </div>
-    <div class="reviews-grid">
-
-      <div class="review-card reveal">
-        <div class="review-quote" aria-hidden="true">"</div>
-        <div class="review-stars">
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="review-text">Τα πιο νόστιμα ντόνατς! Η κυρία που με εξυπηρέτησε ήταν πιο γλυκιά κι από τα προϊόντα.</p>
-        <div class="review-author-row">
-          <div class="review-avatar">Α</div>
-          <div>
-            <div class="review-author-name">Αξιολόγηση Google</div>
-            <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-shape" aria-hidden="true"></div>
+      <div class="hero-bg-shape2" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">🍩 Ελευσίνα, Αττική</div>
+          <div class="hero-badge">⭐ 14 Χρόνια Εμπειρίας</div>
+          <p class="hero-subtitle">
+            <b>DONUTSELLO</b> σημαίνει ντόνατς ημέρας, ποικιλία γεύσεων. Ελάτε
+            να μας βρείτε στην Ελευσίνα, γιατί προτεραιότητα μας είστε εσείς!
+          </p>
+          <div class="hero-actions">
+            <a href="menu.html" class="btn-primary">Δείτε το Μενού</a>
+            <a href="#info" class="btn-secondary">📍 Βρείτε μας</a>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="review-card reveal reveal-delay-1">
-        <div class="review-quote" aria-hidden="true">"</div>
-        <div class="review-stars">
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    <!-- WHY -->
+    <section class="section why-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow">Γιατί Donutsello</span>
+          <h2 class="section-title">Γεύση που <em>Αγαπάς</em></h2>
+          <p class="section-sub">
+            Αυτό που μας κάνει ξεχωριστούς δεν είναι μόνο τα υλικά — είναι το
+            μεράκι που βάζουμε σε κάθε ντόνατ.
+          </p>
         </div>
-        <p class="review-text">Πηγαίνω χρόνια τώρα, η ποιότητα είναι πάντα TOP, νόστιμα, φρέσκα και σε πολύ καλές τιμές!</p>
-        <div class="review-author-row">
-          <div class="review-avatar">Μ</div>
-          <div>
-            <div class="review-author-name">Αξιολόγηση Google</div>
-            <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
+        <div class="why-grid">
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon-wrap" style="background: #e8f5ee">🌿</div>
+            <div class="why-card-title">Φρέσκα Υλικά</div>
+            <div class="why-card-desc">
+              Μόνο φρέσκα υλικά υψηλής ποιότητας. Φτιαγμένα την ίδια μέρα —
+              πάντα φρέσκα.
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="review-card reveal reveal-delay-2">
-        <div class="review-quote" aria-hidden="true">"</div>
-        <div class="review-stars">
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg class="review-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="review-text">Εδώ θα βρείτε ατελείωτη ποικιλία σε γλυκά και αλμυρά. Μια φορά να το δοκιμάσεις και κολλάς!</p>
-        <div class="review-author-row">
-          <div class="review-avatar">Ε</div>
-          <div>
-            <div class="review-author-name">Αξιολόγηση Google</div>
-            <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon-wrap" style="background: #fdf6e3">💶</div>
+            <div class="why-card-title">Απίστευτη Τιμή</div>
+            <div class="why-card-desc">
+              Γεμιστά ντόνατς. Τόση νοστιμιά χωρίς να σπάσεις την τσέπη!
+            </div>
           </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- INFO -->
-<section class="section info-section" id="info">
-  <div class="section-inner">
-    <div class="info-grid">
-      <div class="info-block reveal">
-        <h3>Βρείτε μας στην Ελευσίνα</h3>
-
-        <div class="info-item">
-          <div class="info-item-icon">📍</div>
-          <div>
-            <div class="info-item-label">Διεύθυνση</div>
-            <div class="info-item-value">
-              Ελευθέριου Βενιζέλου 62<br>
-              Ελευσίνα 192 00, Αττική
+          <div class="why-card reveal reveal-delay-3">
+            <div class="why-icon-wrap" style="background: #eef3fd">💛</div>
+            <div class="why-card-title">Υπηρεσία με Ψυχή</div>
+            <div class="why-card-desc">
+              Η κυρία που σε εξυπηρετεί είναι η καρδιά του καταστήματος — ζεστή
+              και χαρούμενη!
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="info-item">
-          <div class="info-item-icon">📞</div>
-          <div>
-            <div class="info-item-label">Τηλέφωνο</div>
-            <div class="info-item-value">
-              <a href="tel:+302130438090">21 3043 8090</a>
+    <!-- REVIEWS -->
+    <section class="section reviews-section" id="reviews">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="eyebrow">Τι Λένε οι Πελάτες</span>
+          <h2 class="section-title">Αληθινές <em>Κριτικές</em></h2>
+          <p class="section-sub">
+            Δεν μας αρκεί να λέμε εμείς ότι είμαστε καλοί — οι πελάτες μας το
+            λένε καλύτερα.
+          </p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card reveal">
+            <div class="review-quote" aria-hidden="true">"</div>
+            <div class="review-stars">
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <p class="review-text">
+              Τα πιο νόστιμα ντόνατς! Η κυρία που με εξυπηρέτησε ήταν πιο γλυκιά
+              κι από τα προϊόντα.
+            </p>
+            <div class="review-author-row">
+              <div class="review-avatar">Α</div>
+              <div>
+                <div class="review-author-name">Αξιολόγηση Google</div>
+                <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal reveal-delay-1">
+            <div class="review-quote" aria-hidden="true">"</div>
+            <div class="review-stars">
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <p class="review-text">
+              Πηγαίνω χρόνια τώρα, η ποιότητα είναι πάντα TOP, νόστιμα, φρέσκα
+              και σε πολύ καλές τιμές!
+            </p>
+            <div class="review-author-row">
+              <div class="review-avatar">Μ</div>
+              <div>
+                <div class="review-author-name">Αξιολόγηση Google</div>
+                <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal reveal-delay-2">
+            <div class="review-quote" aria-hidden="true">"</div>
+            <div class="review-stars">
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg class="review-star" viewBox="0 0 24 24">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <p class="review-text">
+              Εδώ θα βρείτε ατελείωτη ποικιλία σε γλυκά και αλμυρά. Μια φορά να
+              το δοκιμάσεις και κολλάς!
+            </p>
+            <div class="review-author-row">
+              <div class="review-avatar">Ε</div>
+              <div>
+                <div class="review-author-name">Αξιολόγηση Google</div>
+                <div class="review-author-sub">Επαληθευμένη Επίσκεψη ✓</div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="info-item">
-          <div class="info-item-icon">🕐</div>
-          <div>
-            <div class="info-item-label">Ώρες Λειτουργίας</div>
-            <div class="hours-table">
-              <span class="hours-day">Δευτέρα</span><span class="hours-time">17:30 – 21:30</span>
-              <span class="hours-day">Τρίτη</span><span class="hours-time">17:30 – 21:00</span>
-              <span class="hours-day">Τετάρτη</span><span class="hours-time">17:30 – 21:30</span>
-              <span class="hours-day">Πέμπτη</span><span class="hours-time">17:30 – 21:30</span>
-              <span class="hours-day">Παρασκευή</span><span class="hours-time">17:30 – 21:30</span>
-              <span class="hours-day">Σάββατο</span><span class="hours-closed">Κλειστά</span>
-              <span class="hours-day">Κυριακή</span><span class="hours-time">17:30 – 21:30</span>
+    <!-- INFO -->
+    <section class="section info-section" id="info">
+      <div class="section-inner">
+        <div class="info-grid">
+          <div class="info-block reveal">
+            <h3>Βρείτε μας στην Ελευσίνα</h3>
+
+            <div class="info-item">
+              <div class="info-item-icon">📍</div>
+              <div>
+                <div class="info-item-label">Διεύθυνση</div>
+                <div class="info-item-value">
+                  Ελευθέριου Βενιζέλου 62<br />
+                  Ελευσίνα 192 00, Αττική
+                </div>
+              </div>
             </div>
+
+            <div class="info-item">
+              <div class="info-item-icon">📞</div>
+              <div>
+                <div class="info-item-label">Τηλέφωνο</div>
+                <div class="info-item-value">
+                  <a href="tel:+302130438090">21 3043 8090</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item-icon">🕐</div>
+              <div>
+                <div class="info-item-label">Ώρες Λειτουργίας</div>
+                <div class="hours-table">
+                  <span class="hours-day">Δευτέρα</span
+                  ><span class="hours-time">17:30 – 21:30</span>
+                  <span class="hours-day">Τρίτη</span
+                  ><span class="hours-time">17:30 – 21:00</span>
+                  <span class="hours-day">Τετάρτη</span
+                  ><span class="hours-time">17:30 – 21:30</span>
+                  <span class="hours-day">Πέμπτη</span
+                  ><span class="hours-time">17:30 – 21:30</span>
+                  <span class="hours-day">Παρασκευή</span
+                  ><span class="hours-time">17:30 – 21:30</span>
+                  <span class="hours-day">Σάββατο</span
+                  ><span class="hours-closed">Κλειστά</span>
+                  <span class="hours-day">Κυριακή</span
+                  ><span class="hours-time">17:30 – 21:30</span>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://maps.google.com/?q=Donutsello+Elefsina"
+              target="_blank"
+              rel="noopener"
+              class="btn-outline"
+            >
+              🗺️ Άνοιξε στο Google Maps
+            </a>
+          </div>
+
+          <div class="map-wrap reveal reveal-delay-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.9!2d23.5372691!3d38.0484537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1af97b8c111e9%3A0x5baedbedb350998!2sDonutsello%20%CE%95%CE%BB%CE%B5%CF%85%CF%83%CE%AF%CE%BD%CE%B1%CF%82!5e0!3m2!1sel!2sgr!4v1"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Χάρτης Donutsello Ελευσίνα"
+            >
+            </iframe>
           </div>
         </div>
-
-        <a href="https://maps.google.com/?q=Donutsello+Elefsina" target="_blank" rel="noopener" class="btn-outline">
-          🗺️ Άνοιξε στο Google Maps
-        </a>
       </div>
+    </section>
 
-      <div class="map-wrap reveal reveal-delay-1">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.9!2d23.5372691!3d38.0484537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1af97b8c111e9%3A0x5baedbedb350998!2sDonutsello%20%CE%95%CE%BB%CE%B5%CF%85%CF%83%CE%AF%CE%BD%CE%B1%CF%82!5e0!3m2!1sel!2sgr!4v1"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Χάρτης Donutsello Ελευσίνα">
-        </iframe>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">Donut<span>sello</span></div>
+        <ul class="footer-links">
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="menu.html">Μενού</a></li>
+          <li><a href="services.html">Υπηρεσίες</a></li>
+          <li><a href="index.html#reviews">Κριτικές</a></li>
+          <li><a href="index.html#info">Ώρες & Τοποθεσία</a></li>
+          <li>
+            <a href="https://www.instagram.com/donutsello_eleusinas/"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100004138966222"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+        <div class="footer-right">Ελευσίνα, Αττική</div>
       </div>
-    </div>
-  </div>
-</section>
+      <div class="footer-divider">
+        <span class="footer-copy"
+          >© 2025 Donutsello Ελευσίνας. Με αγάπη από την Ελευσίνα.</span
+        >
+        <span class="footer-copy">Χειροποίητα Ντόνατς με Μεράκι.</span>
+      </div>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Donut<span>sello</span></div>
-    <ul class="footer-links">
-      <li><a href="index.html">Αρχική</a></li>
-      <li><a href="menu.html">Μενού</a></li>
-      <li><a href="services.html">Υπηρεσίες</a></li>
-      <li><a href="index.html#reviews">Κριτικές</a></li>
-      <li><a href="index.html#info">Ώρες & Τοποθεσία</a></li>
-      <li><a href="https://www.instagram.com/donutsello_eleusinas/">Instagram</a></li>
-      <li><a href="https://www.facebook.com/profile.php?id=100004138966222">Facebook</a></li>
-    </ul>
-    <div class="footer-right">Ελευσίνα, Αττική</div>
-  </div>
-  <div class="footer-divider">
-    <span class="footer-copy">© 2025 Donutsello Ελευσίνας. Με αγάπη από την Ελευσίνα.</span>
-    <span class="footer-copy">Χειροποίητα Ντόνατς με Μεράκι.</span>
-  </div>
-</footer>
+    <script>
+      (function () {
+        var els = document.querySelectorAll(".reveal");
+        function check() {
+          els.forEach(function (el) {
+            if (el.classList.contains("visible")) return;
+            var rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 60) {
+              el.classList.add("visible");
+            }
+          });
+        }
+        window.addEventListener("load", check);
+        window.addEventListener("scroll", check, { passive: true });
+      })();
+    </script>
 
-<script>
-(function() {
-  var els = document.querySelectorAll('.reveal');
-  function check() {
-    els.forEach(function(el) {
-      if (el.classList.contains('visible')) return;
-      var rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 60) {
-        el.classList.add('visible');
-      }
-    });
-  }
-  window.addEventListener('load', check);
-  window.addEventListener('scroll', check, { passive: true });
-})();
-</script>
-
-<script>
-  const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  hamburger.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  // Close on link click
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', false);
-    });
-  });
-</script>
-
-<!-- CONTACT MODAL -->
-<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-label="Επικοινωνία">
-  <div class="modal">
-    <button class="modal-close" id="modalClose" aria-label="Κλείσιμο">✕</button>
-    <p class="modal-eyebrow">Επικοινωνία</p>
-    <h2 class="modal-title">Καλέστε μας!</h2>
-    <div class="modal-number">
-      <span class="modal-number-text">21 3043 8090</span>
-      <button class="modal-copy-btn" id="modalCopyBtn">Αντιγραφή</button>
-    </div>
-    <p class="modal-hours">
-      <strong>Δευτ – Παρ:</strong> 07:30 – 21:00<br>
-      <strong>Σάββατο:</strong> 08:00 – 21:00<br>
-      <strong>Κυριακή:</strong> 08:00 – 20:00
-    </p>
-    <a href="tel:+302130438090" class="modal-dial-btn">Κλήση τώρα</a>
-  </div>
-</div>
-<script>
-  (function() {
-    const isMobile = () => ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
-    const overlay = document.getElementById('contactModal');
-    const closeBtn = document.getElementById('modalClose');
-    const copyBtn = document.getElementById('modalCopyBtn');
-
-    function openModal() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closeModal() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
-
-    // Intercept ALL tel: links except the modal dial button
-    document.querySelectorAll('a[href="tel:+302130438090"]:not(.modal-dial-btn)').forEach(el => {
-      el.addEventListener('click', function(e) {
-        if (!isMobile()) { e.preventDefault(); openModal(); }
+    <script>
+      const hamburger = document.querySelector(".nav-hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      hamburger.addEventListener("click", () => {
+        const open = navLinks.classList.toggle("open");
+        hamburger.classList.toggle("open", open);
+        hamburger.setAttribute("aria-expanded", open);
       });
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText('21 3043 8090').then(() => {
-        copyBtn.textContent = 'Αντιγράφηκε ✓';
-        copyBtn.classList.add('copied');
-        setTimeout(() => { copyBtn.textContent = 'Αντιγραφή'; copyBtn.classList.remove('copied'); }, 2000);
+      // Close on link click
+      navLinks.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          hamburger.classList.remove("open");
+          hamburger.setAttribute("aria-expanded", false);
+        });
       });
-    });
-  })();
-</script>
-</body>
+    </script>
+
+    <!-- CONTACT MODAL -->
+    <div
+      class="modal-overlay"
+      id="contactModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Επικοινωνία"
+    >
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Κλείσιμο">
+          ✕
+        </button>
+        <p class="modal-eyebrow">Επικοινωνία</p>
+        <h2 class="modal-title">Καλέστε μας!</h2>
+        <div class="modal-number">
+          <span class="modal-number-text">21 3043 8090</span>
+          <button class="modal-copy-btn" id="modalCopyBtn">Αντιγραφή</button>
+        </div>
+        <p class="modal-hours">
+          <strong>Δευτ – Παρ:</strong> 07:30 – 21:00<br />
+          <strong>Σάββατο:</strong> 08:00 – 21:00<br />
+          <strong>Κυριακή:</strong> 08:00 – 20:00
+        </p>
+        <a href="tel:+302130438090" class="modal-dial-btn">Κλήση τώρα</a>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const isMobile = () =>
+          "ontouchstart" in window || navigator.maxTouchPoints > 0;
+        const overlay = document.getElementById("contactModal");
+        const closeBtn = document.getElementById("modalClose");
+        const copyBtn = document.getElementById("modalCopyBtn");
+
+        function openModal() {
+          overlay.classList.add("open");
+          document.body.style.overflow = "hidden";
+        }
+        function closeModal() {
+          overlay.classList.remove("open");
+          document.body.style.overflow = "";
+        }
+
+        // Intercept ALL tel: links except the modal dial button
+        document
+          .querySelectorAll('a[href="tel:+302130438090"]:not(.modal-dial-btn)')
+          .forEach((el) => {
+            el.addEventListener("click", function (e) {
+              if (!isMobile()) {
+                e.preventDefault();
+                openModal();
+              }
+            });
+          });
+
+        closeBtn.addEventListener("click", closeModal);
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeModal();
+        });
+
+        copyBtn.addEventListener("click", () => {
+          navigator.clipboard.writeText("21 3043 8090").then(() => {
+            copyBtn.textContent = "Αντιγράφηκε ✓";
+            copyBtn.classList.add("copied");
+            setTimeout(() => {
+              copyBtn.textContent = "Αντιγραφή";
+              copyBtn.classList.remove("copied");
+            }, 2000);
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
