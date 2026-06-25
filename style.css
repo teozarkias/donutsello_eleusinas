@@ -191,7 +191,7 @@ nav {
   color: var(--ink-2);
   margin-top: 1rem;
   margin-bottom: 2.2rem;
-  max-width: 420px;
+  max-width: 400px;
   background: rgba(255, 255, 255);
   border-radius: var(--radius-lg);
   padding: 1rem 1.25rem;
